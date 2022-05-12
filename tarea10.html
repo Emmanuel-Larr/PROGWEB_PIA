@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea No.10</title>
+    <link rel="stylesheet" href="Css/tarea10_css.css">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>1945008</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="personales.html">Personales (Inicio)</a></li>
+                    <li><a href="tareas.html">Tareas (Inicio)</a></li>
+                </ul>
+            </nav>
+            <div class="botones">
+
+                <button class="button_anterior"><a href="tarea9.html">Anterior</a></button>
+
+                <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                <button class="button_siguiente"><a href="tarea11.html">Siguiente</a></button>
+            </div>
+            <article>
+
+                <div class="Conceptos">
+
+                    <h1>Tarea No.10</h1><br>
+                    <div class="descripcion">
+                        <h4>Descripcion:</h4><br>
+                        <li><strong>Del lenguaje Gödel</strong></li>
+                        <li>Investigar:</li>
+                            <ul>
+                                <li>Simbolos, sintaxis, esqueleto de los programas.</li>
+                                <li>Aplicacion a descargar para editar y ejecutar.</li>
+                                <li>A que tipo de paradigma pertenece.</li>
+                                <li>Un ejemplo de un programa escrito en ese lenguaje <br> (NO EL PROGRAMA "HOLA MUNDO").</li>
+                            </ul>
+                    </div> <br><br>
+
+                    <h3>Lenguaje Gödel</h3> <br>
+
+                    <img src="img/Tarea No.10/godel.png" style="float: right; width: 180px; height: 160px; margin-left: 20px;" >
+
+                    <p> Gödel es un lenguaje de programación declarativo, de propósito general, adherido al paradigma de la programación lógica. Es un lenguaje fuertemente 
+                        tipado, con un sistema de tipos basado en many-sorted logic con polimorfismo parametrizado. Se le dio ese nombre en honor al lógico Kurt Gödel.<br><br>
+
+                        Ademas que puede resolver restricciones sobre dominios finitos de enteros y también restricciones racionales lineales. Soporta el procesamiento de conjuntos finitos. 
+                        También tiene una regla de cálculo flexible y un operador de poda que generaliza el compromiso del lenguaje de programación lógica concurrente.
+
+
+                    </p><br><br>
+
+                    <h3>Sintaxis y Simbolos</h3><br>
+
+                    <h4>Sintaxis General con simbolos y operadores</h4><br>
+                    <div class="c2" style="width: 450px; height: 1000px; border: black solid 2px; float: right; padding: 5px;">
+                        <ul>
+
+
+                                
+                                    | <&> | <?> | <‘> | <@> | <!> | <$> | <:> | <|> | <’><br><br>
+                                    BigLetter −→ <"A"> | <"B"> | <"C"> | <"D"> | <"E"> | <"F"> | <"G"> | <"H"> | <"I"><br><br>
+                                    LittleLetter −→ <"a"> | <"b"> | <"c"> | <"d"> |<br><br>
+                                    | <"j"> | <"k"> | <"l"> | <"m"> |<br><br>
+                                    | <"s"> | <"t"> | <"u"> | <"v"> | <"w"> | <"x"> | <"y"> | <"z"><br><br>
+                                    PositiveNumber −→ {Zero} NonZero {Digit}<br><br>
+                                    Digit −→ Zero | NonZero<br><br>
+                                    NonZero −→ <"1"> | <"2"> | <"3"> | <"4"> | <"5"> | <"6"> | <"7"> | <"8"> | <"9"><br><br>
+                                    Zero −→ <0><br><br>
+                                    StringCharacter −→ <\> <\> | <\> <"> | [<\>] NonEscCharacter<br><br>
+                                    LayoutItem −→ LayoutCharacter | Comment<br><br>
+                                    LayoutCharacter −→ < space > | < tab > | < newline ><br><br>
+                                    Comment −→ <%> {Character}<br><br>
+                                    Character −→ <\> | <"> | NonEscCharacter<br><br>
+                                    NonEscCharacter −→ LayoutCharacter | NonBSGraphicChar | NameCharacter
+                                    | Semicolon | Comma | Terminator | <%> | <{> | <}><br><br>
+                                    | <(> | <)> | <[> | <]><br><br>
+                                    Identifier −→ QuotedIdent | DbleQuotedIdent | OrdinaryIdent<br><br>
+                                    QuotedIdent −→ <’> {QuoteChar} <’><br><br>
+                                    QuoteChar −→ <’><’> | Character<br><br>
+                                    Condition: Character may not be ’.<br><br>
+                                    DbleQuotedIdent −→ <"> {DbleQuoteChar} <"><br><br>
+                                    DbleQuoteChar −→ <"><"> | Character<br><br>
+                        
+                            </li><br>
+                        </ul>
+
+                    </div>
+                    <div class="simbolo1">
+                        <p>
+                            <ul>
+                                Notation = non-terminal −→ sequence of terminals and non-terminals<br><br>
+                                {X} means 0 or more occurrences of X.<br><br>
+                                {X}(n) means exactly n occurrences of X.<br><br>
+                                [X] means 0 or 1 occurrence of X.<br><br>
+                                Token −→ BigName | LittleName | GraphicName | String | Bracket | Comma<br><br>
+                                | Semicolon | Underscore | Terminator | Number | Float | Identifier<br><br>
+
+                                BigName −→ BigLetter {NameCharacter}<br><br>
+                                LittleName −→ LittleLetter {NameCharacter}<br><br>
+                                GraphicName −→ GraphicCharacter {GraphicCharacter}<br><br>
+                                String −→ < " > {StringCharacter} < " ><br><br>
+                                Bracket −→ <{> | <}> [<_> Label] | <(> | <)> | <[> | <]><br><br>
+                                Comma −→ <,><br><br>
+                                Semicolon −→ <;><br><br>
+                                Underscore −→ <_><br><br>
+                                Terminator −→ <.><br><br>
+                                Number −→ Zero {Zero} | PositiveNumber<br><br>
+                                Float −→ Decimal<br><br>
+                                | Decimal < E > <+> Number<br><br>
+                                | Decimal < E > <-> Number<br><br>
+                                Decimal −→ Number < . > Number<br><br>
+                                Label −→ PositiveNumber<br><br>
+                                NameCharacter −→ BigLetter | LittleLetter | Digit | Underscore<br><br>
+                                GraphicCharacter −→ <\> | NonBSGraphicChar<br><br>
+                                NonBSGraphicChar −→ <+> | <-> | <*> |</> | <^> | <#> | <<> | <>> | <=> | <~><br><br>
+
+                                </li><br>
+                        </div><br><br>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 500px; height: 690px; padding: 5px;">
+                        <p>
+                            <ul>
+                                Goal −→ <‘<-’> GoalBody<br><br>
+                                GoalBody −→ Body<br><br>
+                                | <‘:’> Body
+                                | VariableSeq <‘:’> Body
+                                Theory −→ <‘THEORY’> TheoryName <"Terminator"> {TheoryItem}<br><br>
+                                    TheoryName −→ <"UserBigName"><br><br>
+                                TheoryItem −→ ImportDecl <"Terminator">
+                                    | LanguageDecl <"Terminator">
+                                    | FirstOrderFormula(f) <"Terminator">
+                                FirstOrderFormula(0)−→ Atom<br><br>
+                                    | <‘(’> FirstOrderFormula(f) <‘)’>
+                                    Flock −→ {Unit <"Terminator">}<br><br>
+                                Unit −→ <"Identifier"><br><br>
+                                            | <"Identifier"> <‘(’> <‘)’>
+                                            | <"Identifier"> <‘(’> UnitSeq <‘)’>
+                                UnitSeq −→ Unit {<"Comma"> Unit}<br><br>
+                                StandardStatement −→ Atom <- [StandardBody]<br><br>
+                                NormalStatement −→ Atom <- [NormalBody]<br><br>
+                                DefiniteStatement −→ Atom <- [DefiniteBody]<br><br>
+                                StandardResultant −→ [StandardBody] <- [StandardBody]<br><br>
+                                NormalResultant −→ [NormalBody] <- [NormalBody]<br><br>
+                                DefiniteResultant −→ [DefiniteBody] <- [DefiniteBody]<br><br>
+                                StandardGoal −→ <- [StandardBody]<br><br>
+                                NormalGoal −→ <- [NormalBody]<br><br>
+                                DefiniteGoal −→ <- [DefiniteBody]<br><br>
+
+                            </ul>
+                        </div>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 410px; height: 690px; padding: 5px;">
+                        <p>
+                            <ul> 
+                                Program −→ Module {Module} <br>
+                                Module −→ ExportPart LocalPart 
+                                | ExportPart
+                                | LocalPart <br><br>
+                                ExportPart −→ ExportKind ModuleName <"Terminator"> {ExportItem} <br>
+                                LocalPart −→ LocalKind ModuleName <"Terminator"> {LocalItem} <br>
+                                ExportKind −→ <‘EXPORT’> | <‘CLOSED’><br><br>
+                                LocalKind −→ <‘LOCAL’> | <‘MODULE’><br><br>
+                                ModuleName −→ UserBigNam<br><br>
+                                ExportItem −→ ImportDecl <"Terminator"><br><br>
+                                    | LanguageDecl <"Terminator"><br><br>
+                                    | ControlDecl <"Terminator"><br><br>
+                                    LocalItem −→ ImportDecl <"Terminator"><br><br>
+                                    | LiftDecl <"Terminator"><br><br>
+                                    | LanguageDecl <"Terminator"><br><br>
+                                    | ControlDecl <"Terminator"><br><br>
+                                    | Statement <"Terminator"><br><br>
+                                    ImportDecl −→ <‘IMPORT’> ModuleName {<"Comma"> ModuleName}<br><br>
+                                    LiftDecl −→ <‘LIFT’> ModuleName {<"Comma"> ModuleName}<br><br>
+
+                            </ul>
+                        </div> 
+                        <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 410px; height: 910px; padding: 5px;">
+                            <p>
+                                <ul> 
+
+                                    BaseDecl −→ <‘BASE’> UserNameSeq<br><br>
+                                    ConstructorDecl −→ <‘CONSTRUCTOR’> ConstrDecl {<"Comma"> ConstrDecl}<br><br>
+                                    ConstrDecl −→ UserName <‘/’> <"PositiveNumber"><br><br>
+                                    ConstantDecl −→ <‘CONSTANT’> ConstDecl {<"Semicolon"> ConstDecl}<br><br>
+                                    ConstDecl −→ UserNameSeq <‘:’> Type<br><br>
+                                    FunctionDecl −→ <‘FUNCTION’> FuncDecl {<"Semicolon"> FuncDecl}<br><br>
+                                    FuncDecl −→ UserNameSeq<br><br>
+                                    [<‘:’> FunctionSpec(n) <‘(’> <"PositiveNumber"> <‘)’>]
+                                    <‘:’> Type {<‘*’> Type}(n−1) <‘->’> Type<br><br>
+                                    FunctionSpec(1) −→ <‘Fx’> | <‘Fy’> | <‘xF’> | <‘yF’><br><br>
+                                    FunctionSpec(2) −→ <‘xFx’> | <‘xFy’> | <‘yFx’><br><br>
+                                    PropositionDecl −→ <‘PROPOSITION’> UserNameSeq<br><br>
+                                    PredicateDecl −→ <‘PREDICATE’> PredDecl {<"Semicolon"> PredDecl}<br><br>
+                                    PredDecl −→ UserNameSeq [<‘:’> PredicateSpec(n)]
+                                    <‘:’> Type {<‘*’> Type}<br><br>
+                                    (n−1)
+                                    PredicateSpec(1) −→ <‘Pz’> | <‘zP’><br><br>
+                                    PredicateSpec(2) −→ <‘zPz’><br><br>
+                                    UserNameSeq −→ UserName {< Comma > UserName}<br><br>
+                                    UserName −→ UserBigName | UserGraphicName<br><br>
+                                    UserBigName −→ < BigName ><br><br>
+
+
+                                </ul>
+                            </div> <br>
+                            <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 500px; height: 910px; padding: 5px;">
+                                <p>
+                                    <ul> 
+                                        Type −→ Parameter
+                                        | Base
+                                        | Constructor(n) <‘(’> TypeSeq(n) <‘)’><br><br>
+                                        TypeSeq(n) −→ Type {<"Comma"> Type}
+                                        (n−1)<br><br>
+                                        Base −→ UserName<br><br>
+                                        Constructor(n) −→ UserName<br><br>
+                                        Parameter −→ < LittleName ><br><br>
+                                        ContDecl −→ Atom <‘UNTIL’> Cond<br><br>
+                                        Cond −→ Cond1<br><br>
+                                        | Cond1 <‘&’> AndSeq
+                                        | Cond1 <‘\/’> OrSeq
+                                        Cond1 −→ <‘NONVAR’> <‘(’> Variable <‘)’><br><br>
+                                        | <‘GROUND’> <‘(’> Variable <‘)’>
+                                        | <‘TRUE’>
+                                        | <‘(’> Cond <‘)’>
+                                        AndSeq −→ Cond1 | Cond1 <‘&’> AndSeq<br><br>
+                                        OrSeq −→ Cond1 | Cond1 <‘\/’> OrSeq<br><br>
+                                        Statement −→ Atom [<‘<-’> Body]<br><br>
+                                        Body −→ [CFormula(f)] <‘|’> [CFormula(f1)]<br><br>
+                                        | CFormula(f)
+                                        CFormula(0) −→ <‘(’> CFormula(f) <‘)’><br><br>
+                                        | <‘{’> CFormula(f) <‘}’ [‘_’ Label]>
+                                        CFormula(2) −→ CFormula(f) <‘&’> CFormula(f1)<br><br>
+                                        CFormula(f) −→ Formula(f)<br><br>
+                                        List −→ <‘[’> [ListExpr] <‘]’ ><br><br>
+                                        VariableSeq −→ <"LittleName"> {<"Comma"> <"LittleName">}<br><br>
+                                            Variable −→ <"LittleName"> | <"Underscore"> [<"LittleName">]
+
+                                    </ul>
+                                </div> <br>
+    
+
+                    <p>.</p><br><br>
+                    <h3>Esqueleto de los programas</h3><br>
+
+                        <img src="img/Tarea No.10/est.png" style="margin-left: 150px; height: 450px; width: 600px;"> <br><br>
+
+                    <h3>Aplicacion a descargar para editar y ejecutar</h3><br>
+                    <p>GNU/Linux es la denominación técnica y generalizada que reciben una serie de sistemas operativos de tipo Unix, que también suelen ser de código abierto, multiplataforma, multiusuario y multitarea, y 
+                        es una de las aplicaciones con las que puedes programar Godel, no es la unica pero es una de las mas conocidas.
+
+                    </p><br><br>
+
+                    <img src="img/Tarea No.10/apli.png" style="margin-left: 200px; height: 240px; width: 500px;"><br><br><br><br><br>
+
+                    <h3>¿A que tipo de paradigma pertenece? - Paradigma logico</h3><br>
+
+                    <p> Gödel es un lenguaje de programación declarativo, de propósito general, adherido al paradigma de la programación lógica. Es un lenguaje fuertemente tipado, con un sistema de tipos basado 
+                        en many-sorted logic con polimorfismo parametrizado. Se le dio ese nombre en honor al lógico Kurt Gödel.<br><br>
+                        El propio  paradigma de software lógico, denominado también como programación predicativa, se basa en la lógica matemática. En lugar de una sucesión de instrucciones, un software programado según 
+                        este principio contiene un conjuntode principios que se pueden entender como una recopilación de hechos y suposiciones.
+
+                    </p><br><br>
+
+                    <h3>Ejemplo de un programa escrito en este lenguaje</h3><br><br><br>
+                    <img src="img/Tarea No.10/ejemplo.png" style="margin-left: 180px; margin-bottom: 200px; width: 600px; height: 500px;">
+
+
+                </div>
+            </article>
+            <div class="botones">
+
+                    <button class="button_anterior"><a href="tarea9.html">Anterior</a></button>
+
+                    <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                    <button class="button_siguiente"><a href="tarea11.html">Siguiente</a></button>
+            </div>
+
+            
+    </main>
+</body>
+</html>

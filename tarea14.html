@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea No.14</title>
+    <link rel="stylesheet" href="Css/tarea14_css.css">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>1945008</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="personales.html">Personales (Inicio)</a></li>
+                    <li><a href="tareas.html">Tareas (Inicio)</a></li>
+                </ul>
+            </nav>
+            <div class="botones">
+
+                <button class="button_anterior"><a href="tarea13.html">Anterior</a></button>
+
+                <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                <button class="button_siguiente"><a href="tarea15.html">Siguiente</a></button>
+            </div>
+            <article>
+
+                <div class="Conceptos">
+
+                    <h1>Tarea No.14</h1><br>
+                    <div class="descripcion">
+                        <h4>Descripcion:</h4><br>
+                        <li><strong>Del lenguaje SQL</strong></li>
+                        <li>Investigar:</li>
+                            <ul>
+                                <li>Simbolos, sintaxis, esqueleto de los programas.</li>
+                                <li>Aplicacion a descargar para editar y ejecutar.</li>
+                                <li>A que tipo de paradigma pertenece.</li>
+                                <li>Un ejemplo de un programa escrito en ese lenguaje <br> (NO EL PROGRAMA "HOLA MUNDO").</li>
+                            </ul>
+                    </div> <br><br>
+                    
+                    <h3>Lenguaje SQL</h3> <br>
+
+                    <img src="img/Tarea No.14/sql.png" style="float: right; width: 300px; height: 130px; margin-left: 20px;" >
+
+                    <p> SQL es un acrónimo en inglés para Structured Query Language.  Un Lenguaje de Consulta Estructurado. Un tipo de lenguaje de programación que te permite manipular 
+                        y descargar datos de una base de datos. Tiene capacidad de hacer cálculos avanzados y álgebra. Es utilizado 
+                        en la mayoría de empresas que almacenan datos en una base de datos. Ha sido y sigue siendo el lenguaje de programación más usado para bases de datos relacionales.<br><br>
+
+                    </p><br><br>
+
+                    <h3>Sintaxis y Simbolos</h3><br><br><br>
+
+                    <h4>Sintaxis General con simbolos y operadores</h4><br>
+                    <div class="simbolos" style="padding-top: 10px; margin-left: 220px; border: black solid 2px; width: 450px; height: 740px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Database Tables = e.g. "Customers" or "Orders"</li><br>
+                                <li>SQL Statements = SELECT * FROM Customers;</li><br>
+                                <li>Commands = <br><br>
+                                    SELECT - extracts data from a database<br>
+                                    UPDATE - updates data in a database<br>
+                                    DELETE - deletes data from a database<br>
+                                    INSERT INTO - inserts new data into a database<br>
+                                    CREATE DATABASE - creates a new database<br>
+                                    ALTER DATABASE - modifies a database<br>
+                                    CREATE TABLE - creates a new table<br>
+                                    ALTER TABLE - modifies a table<br>
+                                    DROP TABLE - deletes a table<br>
+                                    CREATE INDEX - creates an index (search key)<br>
+                                    DROP INDEX - deletes an index<br>
+                                </li><br>
+                                <li>Operators WHERE  = <br><br>
+                                    =	Equal	<br><br>
+                                    >	Greater than	<br><br>
+                                    <	Less than	<br><br>
+                                    >=	Greater than or equal	<br><br>
+                                    <=	Less than or equal	<br><br>
+                                    <>	Not equal. Note: In some versions of SQL this operator may be written as !=	<br><br>
+                                    BETWEEN	Between a certain range	<br><br>
+                                    LIKE	Search for a pattern	<br><br>
+                                    IN	To specify multiple possible values for a column<br>
+                                </li><br>
+                            </ul>
+                        </div><br><br>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 460px; height: 800px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Where = WHERE condition1 OR condition2 OR condition3 ...;</li><br>
+                                <li>And = WHERE condition1 AND condition2 AND condition3 ...;</li><br>
+                                <li>Or = condition1 OR condition2 OR condition3 ...;</li><br>
+                                <li>Not = NOT condition;</li><br>
+                                <li>Order = ORDER BY, DESC</li><br>
+                                <li>NULL Values = =, <, or <>, IS NULL</li><br>
+                                <li>UPDATE Statement = UPDATE </li><br>
+                                <li>WHERE = <br><br>
+                                    UPDATE Customers<br>
+                                    SET ContactName='Juan'<br>
+                                    WHERE Country='Mexico';
+                                </li><br>
+                                <li>DELETE = DELETE FROM table_name WHERE condition;</li><br>
+                                <li>SELECT TOP = is used to specify the number of records to return.</li><br>
+                                <li>MIN() = returns the smallest value of the selected column.</li><br>
+                                <li>MAX() = returns the largest value of the selected column.</li><br>
+                                <li>COUNT() = returns the number of rows that matches a specified criterion.</li><br>
+                                <li>AVG() = returns the average value of a numeric column.</li><br>
+                                <li>SUM() = returns the total sum of a numeric column. </li><br>
+                                <li>LIKE  = %,(_), WHERE CustomerName LIKE 'a%'</li><br>
+                                <li>Wildcard  = LIKE, WHERE</li><br>
+                            </ul>
+                        </div>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 453px; height: 800px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>* = bl* finds bl, black, blue, and blob</li><br>
+                                <li>? = h?t finds hot, hat, and hit</li><br>
+                                <li>[] = h[oa]t finds hot and hat, but not hit</li><br>
+                                <li>! = h[!oa]t finds hit, but not hot and hat</li><br>
+                                <li>- = c[a-b]t finds cat and cbt</li><br>
+                                <li># = 2#5 finds 205, 215, 225, 235, 245, 255, 265, 275, 285, and 295</li><br>
+                                <li>% = bl% finds bl, black, blue, and blob</li><br>
+                                <li>_ = h_t finds hot, hat, and hit</li><br>
+                                <li>^ = h[^oa]t finds hit, but not hot and hat</li><br>
+                                <li>IN = WHERE column_name IN (value1, value2, ...);</li><br>
+                                <li>BETWEEN  = WHERE column_name BETWEEN value1 AND value2;</li><br>
+                                <li>Aliases = SELECT column_name AS alias_name
+                                              FROM table_name;</li><br>
+                                <li>JOIN = Orden</li><br>
+                                <li>UNION  = SELECT column_name(s) FROM table1
+                                    UNION
+                                    SELECT column_name(s) FROM table2;</li><br>
+                                <li>GROUP BY = (COUNT(), MAX(), MIN(), SUM(), AVG()) </li><br>
+                                <li>HAVING  = clause was added to SQL because the WHERE keyword cannot be used with aggregate functions.</li><br>
+                                <li>EXISTS  = operator is used to test for the existence of any record in a subquery.</li><br>
+
+                            </ul>
+                        </div>
+                        <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 300pxpx; border: black solid 2px; width: 460px; height: 1050px; padding: 5px;">
+                            <p>
+                                <ul>
+                                    <li>ANY = returns a boolean value as a resul</li><br>
+                                    <li>ALL  = returns TRUE if ALL of the subquery values meet the condition</li><br>
+                                    <li>SELECT INTO = statement copies data from one table into a new table.</li><br>
+                                    <li>INSERT INTO SELECT = statement copies data from one table and inserts it into another table.</li><br>
+                                    <li>CASE  = statement goes through conditions and returns a value when the first condition is met like an if-then-else statement.</li><br>
+                                    <li>ELSE =  part and no conditions are true, it returns NULL.</li><br>
+                                    <li>NULL Functions = SELECT ProductName, UnitPrice * (UnitsInStock + UnitsOnOrder)
+                                        FROM Products;</li><br>
+                                    <li>IFNULL() = this function lets you return an alternative value if an expression is NULL.</li><br>
+                                    <li>COALESCE() = COALESCE(UnitsOnOrder, 0))</li><br>
+                                    <li>ISNULL() = SELECT ProductName, UnitPrice * (UnitsInStock + ISNULL(UnitsOnOrder, 0))</li><br>
+                                    <li>NVL() = SELECT ProductName, UnitPrice * (UnitsInStock + NVL(UnitsOnOrder, 0))</li><br>
+                                    <li>Stored Procedure = Is a prepared SQL code that you can save, so the code can be reused over and over again o EXEC procedure_name;</li><br>
+                                    <li>Comments = --</li><br>
+                                    <li>Multi-line Comments = /**/</li><br>
+                                    <li>Operators = Arithmetic, Bitwise, Comparison, Compound y Logical.</li><br>
+                                    <li>Arithmetic = <br><br>
+                                        + = Add	<br>
+                                        - = Subtract<br>	
+                                        * = Multiply<br>	
+                                        / = Divide	<br>
+                                        % = Modulo<br>
+                                    </li><br>
+                                    <li>Bitwise = <br><br>
+                                        & = Bitwise AND<br>
+                                        | = Bitwise OR<br>
+                                        ^ = Bitwise exclusive OR<br>
+                                    </li><br>
+                                   
+                                </ul>
+                            </div>
+
+                        <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 300pxpx; border: black solid 2px; width: 453px; height: 1050px; padding: 5px;">
+                            <p>
+                                <ul>
+                                    <li>Comparison = <br><br>
+                                        = = Equal to	<br>
+                                        > = Greater than	<br>
+                                        < = Less than	<br>
+                                        >= = Greater than or equal to	<br>
+                                        <= = Less than or equal to	<br>
+                                        <> = Not equal to<br>
+                                    </li><br>
+
+
+                                    <li>Compound = <br><br>
+                                        += = Add equals<br>
+                                        -= = Subtract equals<br>
+                                        *= = Multiply equals<br>
+                                        /= = Divide equals<br>
+                                        %= = Modulo equals<br>
+                                        &= = Bitwise AND equals<br>
+                                        ^-= = Bitwise exclusive equals<br>
+                                        |*= = Bitwise OR equals<br>
+                                    </li><br>
+                                    <li>Logical = <br><br>
+                                        ALL = TRUE if all of the subquery values meet the condition	<br><br>
+                                        AND = TRUE if all the conditions separated by AND is TRUE	<br><br>
+                                        ANY = TRUE if any of the subquery values meet the condition	<br><br>
+                                        BETWEEN = TRUE if the operand is within the range of comparisons<br><br>	
+                                        EXISTS = TRUE if the subquery returns one or more records	<br><br>
+                                        IN = TRUE if the operand is equal to one of a list of expressions<br><br>
+                                        LIKE = TRUE if the operand matches a pattern<br><br>	
+                                        NOT = Displays a record if the condition(s) is NOT TRUE	<br><br>
+                                        OR = TRUE if any of the conditions separated by OR is TRUE	<br><br>
+                                        SOME = TRUE if any of the subquery values meet the condition
+                                    </li><br>
+                                </ul>
+                            </div>
+                        <h6>.</h6><br><br>
+                    <h3>Esqueleto de los programas</h3><br>
+                    <p></p><br><br>
+
+                        <img src="img/Tarea No.14/estructura.png" style="margin-left: 110px; height: 400px; width: 700px;"><br><br><br><br>
+
+                    <h3>Aplicacion a descargar para editar y ejecutar</h3><br>
+                    <p></p><br><br>
+
+                    <img src="img/Tarea No.14/aplicacion.png" style="margin-left: 0px; height: 300px; width: 400px;"> <img src="img/Tarea No.14/aplicacion2.png" style=" height: 300px; width: 400px;"><br><br><br><br><br>
+
+                    <h3>¿A que tipo de paradigma pertenece? - Multiparadigma</h3><br>
+
+                    <p>Sql pertenece principalmente al paradigma multiplataforma que es el  que soporta más de un paradigma de programación. Permiten crear programas 
+                        usando más de un estilo de programación.<br><br>
+
+                        El objetivo de dichos lenguajes es permitir a los programadores elegir el mejor paradigma para cada trabajo, sabiendo que ninguno resuelve 
+                        todos los problemas de la forma más fácil y eficiente posible <br><br>
+
+                    </p><br><br>
+
+
+
+
+                    <h3>Ejemplo de un programa escrito en este lenguaje</h3><br><br><br>
+                    <img src="img/Tarea No.14/ejemplo.png" style="margin-left: 110px; width: 700px; height: 800px;">
+
+
+                </div>
+            </article>
+            <div class="botones">
+
+                    <button class="button_anterior"><a href="tarea13.html">Anterior</a></button>
+
+                    <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                    <button class="button_siguiente"><a href="tarea15.html">Siguiente</a></button>
+            </div>
+
+            
+    </main>
+</body>
+</html>

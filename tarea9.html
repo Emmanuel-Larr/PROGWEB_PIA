@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea No.9</title>
+    <link rel="stylesheet" href="Css/tarea9_css.css">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>1945008</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="personales.html">Personales (Inicio)</a></li>
+                    <li><a href="tareas.html">Tareas (Inicio)</a></li>
+                </ul>
+            </nav>
+            <div class="botones">
+
+                <button class="button_anterior"><a href="tarea8.html">Anterior</a></button>
+
+                <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                <button class="button_siguiente"><a href="tarea10.html">Siguiente</a></button>
+            </div>
+            <article>
+
+                <div class="Conceptos">
+
+                    <h1>Tarea No.9</h1><br>
+                    <div class="descripcion">
+                        <h4>Descripcion:</h4><br>
+                        <li><strong>Del lenguaje R</strong></li>
+                        <li>Investigar:</li>
+                            <ul>
+                                <li>Simbolos, sintaxis, esqueleto de los programas.</li>
+                                <li>Aplicacion a descargar para editar y ejecutar.</li>
+                                <li>A que tipo de paradigma pertenece.</li>
+                                <li>Un ejemplo de un programa escrito en ese lenguaje <br> (NO EL PROGRAMA "HOLA MUNDO").</li>
+                            </ul>
+                    </div> <br><br>
+
+                    <h3>Lenguaje R</h3> <br>
+
+                    <img src="img/Tarea No.9/programa.png" style="float: right; width: 230px; height: 170px; margin-left: 20px;" >
+
+                    <p> R es un entorno de software libre de la licencia GNU GLP y lenguaje de programación interpretado, es decir, ejecuta las instrucciones directamente, 
+                        sin una previa compilación del programa a instrucciones en lenguaje máquina. El término entorno, en R, se refiere a un sistema totalmente 
+                        planificado y coherente, en lugar de un acumulación de herramientas específicas e inflexibles, como suele ser el caso en otros softwares de análisis de datos.<br><br>
+
+                        Este entorno es comúnmente utilizado para la computación estadística y gráfica, ya que dispone de una amplia variedad de técnicas estadísticas 
+                       como modelos lineales y no lineales, pruebas estadísticas clásicas, análisis de series de tiempo, clasificación, agrupamiento y gráficas etc. 
+
+                    </p><br><br>
+
+                    <h3>Sintaxis y Simbolos</h3><br>
+
+                    <h4>Sintaxis General con simbolos y operadores</h4><br>
+                    <div class="c2" style="width: 450px; height: 810px; border: black solid 2px; float: right; padding: 5px;">
+                        <ul>
+                            <li>Vectores = 
+                                numericos: >a<- 1.7
+                                logicos: >a<-	seq(1:10)
+                                caracteres: >a
+                            </li><br>
+                            <li>Matrices = >a<-	matrix(1:12,	nrow=3,	ncol=4)	</li><br>
+                            <li>Arrays = >z<-	array(1:24,	dim=c(2,3,4))</li><br>
+                            <li>Factores =<br><br> >bv<- c(0.92,0.97,0.87,0.91,0.92,1.04,0.91,0.94,0.96,	
+                             + 0.90,0.96,0.86,0.85) </li><br>
+                            <li>Listas = >gal<-	list(name="NGC3379",	morf="E",	T.RC3=-5,	colours=c(0.53,0.96))	
+                            </li><br>
+                            <li>Data Frames = data.frame(...) </li><br>
+                            <li>Tablas = table</li><br>
+                            <li>Funciones = >	stddev	<- function(x)</li><br><br>
+                            <li>Valores especiales =<br><br> NA (Not available): valores no disponibles<br>
+                                                    NA (Not available): valores no disponibles.<br>
+                                                    Inf: valores infinitos<br>
+                            </li><br>
+                            <li>Subgrupos = <br><br>[	] : extrae uno o varios elementos, misma 
+                                clase <br>
+                                [[	]] :extrae un elemento de un dataframe o 
+                                lista, puede ser de diferente clase <br>
+                                $: extrae elementos de una variable con un 
+                                cierto nombre de un dataframe o una lista
+                            </li><br>
+                        </ul>
+
+                    </div>
+                    <div class="simbolo1">
+                        <p>
+                            <ul>
+                                <li>Inicio de R = <br><br> 
+                                    [user@pc]$	mkdir	work <br>     
+                                    [user@pc]$	cd	work <br>
+                                    [user@pc	work]$	R</li><br>
+
+                                <li>Final de R = <br><br> >	quit()<br>
+
+                                    Save	workspace	image?	[y/n/c]:<br>			
+                                    >	quit(save="no")<br>																														
+                                    >	Ctrl-D	</li><br>
+
+                                <li>Ayuda = <br><br> 
+                                    >	help.start() <br>
+                                    >	help.start()<br>
+                                    > ?pp<br>
+                                    >	help.search("pp")<br>	
+                                    >	apropos("pp",	mode="function")<br>	
+                                    >	apropos("pp",	mode="function")<br>	
+
+                                </li><br>
+
+                                <li>Directorios y entrada/salida = <br><br>
+                                    >	R.home()<br>
+                                    [1]	"/usr/lib64/R<br>
+                                    >	getwd()	<br>																												
+                                    [1]	"/home/user/R"<br>
+                                    >	setwd("/home/user/newRdir")	<br>								
+                                    >	dir()<br>																															
+                                    >	ls()...	<br>																											
+                                    >	history(n)	<br>																									
+                                    >	source("filename.R")<br>																
+                                    >	sink("register.txt")<br>																
+                                    >	sink()<br>																													
+                                    >	save.image("filename”)<br>													
+                                    >	load("filename”)<br>																				
+                                    >	save(objectlist,file="filename”)<br>				
+                                    >	options()	<br>																										
+                                    >	options(opt=...)<br>
+                                    
+                                </li><br>
+                            </ul>
+                        </div><br><br>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 500px; height: 490px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Operaciones basicas = <br><br>
+                                    >a<-c(7+4,7-4,7*4,7/4<br>
+                                    >length(a)<br>
+                                    >dim(b)	<br>														
+                                    >c(min(a),max(a))<br>					
+                                    >which.min(a)<br>										
+                                    >which.max(a)<br>										
+                                    >sort(a<br>															
+                                    >sum(a)<br>																	
+                                    >prod(a)<br>																
+                                    >cumsum(1:10)<br>											
+                                </li><br>
+                                <li>Más operaciones con objetos =<br> <br>   
+                                    c(object1,object2): combina objetos secuencialmente en un vector.<br>
+                                    cbind(object1,object2): combina objetos en columnas sucesivas.<br>
+                                    rbind(object1,object2): combina objetos en filas sucesivas. <br>
+                                    head(object): muestra las primeras líneas.<br>
+                                    tail(object1): muestra las últimas líneas.<br>
+                                    ls(): lista objetos <br>
+                                    rm(object1,object2): elimina objetos<br>
+                                </li><br>                  
+                            </ul>
+                        </div>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 410px; height: 490px; padding: 5px;">
+                        <p>
+                            <ul> 
+                                <li>Graficas = </li><br>
+                                <li>plot = nueva gráfica.</li><br>
+                                <li>lines = añade líneas a un gráfico abierto</li><br>
+                                <li>abline = añade una línea recta</li><br>
+                                <li>segments = añade segmentos</li><br>
+                                <li>points = añade puntos a un gráfico abierto</li><br>
+                                <li>polygon = añade polígonos</li><br>
+                                <li>arrows = añade flechas</li><br>
+                                <li>text = añade texto</li><br>
+                                <li>title = añade títulos a ejes, gráfico</li><br>
+                                <li>axis = añade y modifica propiedades de los ejes</li><br>
+                                <li>hist = histograma</li>
+                            </ul>
+                        </div> 
+                        <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 410px; height: 880px; padding: 5px;">
+                            <p>
+                                <ul> 
+                                    <li>Console = Ayuda sobre el uso de las teclas y sus combinaciones en R</li><br>
+                                    <li>R language (standard) = Proporciona ayuda sobre funciones concretas </li><br>
+                                    <li>R language (html) = Arranca un entorno de ayuda completo en formato html</li><br>
+                                    <li>Manuals = Da acceso al manual de referncia de R en formato pdf</li><br>
+                                    <li>Apropos = Da información sobre las funciones relacionadas con una dada</li><br>
+                                    <li>About = Informa de la versión actual de R</li><br>
+                                    <li>
+                                        %% Resto de una división <br>
+                                        %/% Cociente entero de la división <br>
+                                        * Multiplicación <br>
+                                        + Suma <br>
+                                        - Resta <br>
+                                        ^ Elevar a una potencia <br>
+                                        / División <br>
+                                        < Menor que <br>
+                                        <= Menor o igual que <br>
+                                        > Mayor que <br>
+                                        >= Mayor o igual que <br>
+                                        == Igual <br>
+                                        != Distinto <br><br>
+                                    </li><br>
+                                    <li>
+                                        logic valores lógicos: TRUE (T) o FALSE (F) <br><br>
+                                        numeric números reales <br><br>
+                                        integer valores enteros <br><br>
+                                        double valores reales con doble precisión <br><br>
+                                        complex números complejos <br><br>
+                                        character caracteres (letras y/o números) <br><br>
+                                        NA dato no disponible (not available) <br><br>
+                                        NaN no es un número (not a number)<br>
+
+                                    </li>
+
+
+                                </ul>
+                            </div> <br>
+                            <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 500px; height: 880px; padding: 5px;">
+                                <p>
+                                    <ul> 
+                                        <li>
+                                            exp(x) = Exponencial de x (ex) <br><br>
+                                            log(x) = Logaritmo neperiano de x <br><br>
+                                            log(x,n) = Logaritmo en base n de x <br><br>
+                                            log10(x) = Logaritmo en base 10 de x <br><br>
+                                            sqrt(x) = Raíz cuadrada de x <br><br>
+                                            factorial(x) = Factorial de x (x!) <br><br>
+                                            floor(x) = Mayor valor entero < x <br><br>
+                                            ceiling(x) = Menor valor entero > x <br><br>
+                                            trunc(x) = Valor entero más próximo a x, entre x y 0. Coincide con 
+                                            para valores positivos y con ceiling (x) para valores 
+                                            negativos <br><br>
+                                            round(x, digits=0) = Redondea el valor de x, siendo digits el número de decimales 
+                                            que se permiten. <br><br>
+                                            signif(x, digits=6) = Devuelve el valor de x con 6 dígitos en notación científica <br><br>
+                                            cos(x) = Coseno de x (en radianes) <br><br>
+                                            sin(x) = Seno de x (en radianes) <br><br>
+                                            tan(x) = Tangente de x (en radianes) <br><br>
+                                            acos(x),asin(x),atan(x) = Funciones trigonométricas inversas <br><br>
+                                            abs(x) = Valor absoluto de x<br><br>
+                                        </li><br><br>
+
+                                        <li>
+                                            for = for (nombre in expr_1) {expr_2}<br><br>
+                                            while = while (condicion) {expr}<br><br>
+                                            nuevas funciones = nombre <- function (arg_1 , arg_2, .....) expr<br>
+                                        </li><br>
+                                    </ul>
+                                </div> <br>
+    
+
+                    <p>.</p><br><br>
+                    <h3>Esqueleto de los programas</h3><br><br>
+
+                        <img src="img/Tarea No.9/est.png" style="margin-left: 150px; height: 500px; width: 600px;"><br><br><br><br>
+
+                    <h3>Aplicacion a descargar para editar y ejecutar</h3><br>
+                    <p>
+                        RStudio es un entorno de desarrollo integrado para el lenguaje de programación R, dedicado a la computación estadística y gráficos. Incluye una consola, editor de sintaxis que apoya la ejecución de código, así como herramientas para el trazado, la depuración y la gestión del espacio de trabajo.
+                    </p><br><br>
+
+                    <img src="img/Tarea No.9/programa.png" style="margin-left: 100px; height: 200px; width: 250px;"><img src="img/Tarea No.9/programa2.png" style="margin-left: 30px; height: 160px; width: 400px;">
+                    
+                    <br><br><br><br><br>
+
+                    <h3>¿A que tipo de paradigma pertenece? - Funcional y Orientado a Objetos</h3><br>
+
+                    <p>R es un lenguaje que combina el paradigma Funcional y Orientado a Objetos, en este sentido es muy versátil y extensible mediante los 
+                        paquetes disponibles en CRAN - Comprehensive R Archive Network. Funcional significa que las funciones en R se pueden manipular como se manipulan los vectores. <br><br>
+
+                    </p><br><br>
+
+                    <h3>Ejemplo de un programa escrito en este lenguaje</h3><br><br><br>
+                    <img src="img/Tarea No.9/ejemplo.png" style="margin-left: 50px; width: 800px; height: 300px;">
+                    <img src="img/Tarea No.9/ejemplo2.png" style="margin-left: 50px; width: 805px; height: 600px;">
+                    <img src="img/Tarea No.9/ejemplo3.png" style="margin-left: 50px; width: 500px; height: 400px;">
+
+
+                </div>
+            </article>
+            <div class="botones">
+
+                    <button class="button_anterior"><a href="tarea8.html">Anterior</a></button>
+
+                    <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                    <button class="button_siguiente"><a href="tarea10.html">Siguiente</a></button>
+            </div>
+
+            
+    </main>
+</body>
+</html>

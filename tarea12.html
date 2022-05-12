@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea No.12</title>
+    <link rel="stylesheet" href="Css/tarea12_css.css">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>1945008</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="personales.html">Personales (Inicio)</a></li>
+                    <li><a href="tareas.html">Tareas (Inicio)</a></li>
+                </ul>
+            </nav>
+            <div class="botones">
+
+                <button class="button_anterior"><a href="tarea11.html">Anterior</a></button>
+
+                <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                <button class="button_siguiente"><a href="tarea13.html">Siguiente</a></button>
+            </div>
+            <article>
+
+                <div class="Conceptos">
+
+                    <h1>Tarea No.12</h1><br>
+                    <div class="descripcion">
+                        <h4>Descripcion:</h4><br>
+                        <li><strong>Del lenguaje Ada</strong></li>
+                        <li>Investigar:</li>
+                            <ul>
+                                <li>Simbolos, sintaxis, esqueleto de los programas.</li>
+                                <li>Aplicacion a descargar para editar y ejecutar.</li>
+                                <li>A que tipo de paradigma pertenece.</li>
+                                <li>Un ejemplo de un programa escrito en ese lenguaje <br> (NO EL PROGRAMA "HOLA MUNDO").</li>
+                            </ul>
+                    </div> <br><br>
+
+                    <h3>Lenguaje Ada</h3> <br>
+
+                    <img src="img/Tarea No.12/ada.png" style="float: right; width: 200px; height: 160px; margin-left: 20px;" >
+
+                    <p>Ada es un lenguaje de programación orientado a objetos, fue diseñado por Jean Ichbiah de CII Honeywell Bull por encargo del Departamento de 
+                        Defensa de los Estados Unidos, Durante los años 1970.  Es un lenguaje multipropósito, orientado a objetos y concurrente, pudiendo llegar 
+                        desde la facilidad de Pascal hasta la flexibilidad de C++. <br><br>
+
+                        Ada se usa principalmente en entornos en los que se necesita una gran seguridad y fiabilidad como la defensa, la aeronáutica 
+                        Boeing o Airbus, la gestión del tráfico aéreo como Indra en España y la industria aeroespacial entre otros.
+                        
+                    </p><br><br>
+
+                    <h3>Sintaxis y Simbolos</h3><br><br><br>
+
+                    <h4>Sintaxis General con simbolos y operadores</h4><br>
+                    <div class="simbolos" style="padding-top: 10px; margin-left: 220px; border: black solid 2px; width: 450px; height: 860px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Palabras reservadas = procedure, with, begin, end, for, loop.</li><br>
+                                <li>Identificadores = Palabras separadas por el carácter (_), cada
+                                    palabra empieza con mayúscula y sigue en minúsculas. <br><br>
+                                    Tablas_De_Multiplicar<br>
+                                    Num_Filas<br>
+                                    Fila<br>
+                                    Columna<br>
+                                </li><br>
+                                <li>Paquete = package</li><br>
+                                <li>inicio = begin</li><br>
+                                <li>final = end</li><br>
+                                <li>Variables = constant</li><br>
+                                <li>Comentario = --</li><br>
+                                <li>paquetes = Ada.Text_IO, Integer, Float, Boolean. </li><br>
+                                <li>strings = &</li><br>
+                                <li>Image = funcionan como si fueran funciones o procedimientos.</li><br>
+                                <li>Tipos de datos = <br><br>
+                                    Integer: un número entero.<br><br>
+                                    Float: un número decimal.<br><br>
+                                    Character: una letra o símbolo del teclado (también puede ser un número o varios, pero no se pueden hacer operaciones entre ellos).<br><br>
+                                    String: consiste en una cadena de caracteres.<br><br>
+                                    Array: un array o vector es una variable que agrupa varios elementos de cualquiera de los tipos previamente descritos.</li>
+                            </ul>
+                        </div><br><br>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 350px; height: 300px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>** (exponenciación), abs (valor absoluto), not</li><br>
+                                <li>*, /, mod (módulo), rem (resto)</li><br>
+                                <li>+, - (operadores unarios) </li><br>
+                                <li>+, -, & (operadores binarios)</li><br>
+                                <li>=, /=, <, <=, >, >=</li><br>
+                                <li>and, or, xor (or excluyente) </li><br>
+
+                            </ul>
+                        </div>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 562px; height: 300px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Alternativas  = if, then, end if</li><br>
+                                <li>Nombre de la variable = Case, is, when, end case</li><br>
+                                <li>Ciclos = for, while, loop, end loop</li><br>
+                                <li>Procedimiento = procedure, is, begin, end</li><br>
+                                <li>Funcion = function, return, begin, end</li><br>
+                                <li>Arreglos = constant, type</li><br>
+                                <li>Cadenas = strings</li><br>
+                                <li>registro = type, record, end record</li><br>
+                                
+                            </ul>
+                        </div><br><br>
+
+
+                    <h6>.</h6><br><br>
+
+                    <h3> Esqueleto de los programas</h3><br>
+
+                        <img src="img/Tarea No.12/estructura.png" style="margin-left: 150px; height: 400px; width: 600px;"><br><br><br><br><br>
+
+                    <h3>Aplicacion a descargar para editar y ejecutar</h3><br>
+                    <p>Eclipse es una plataforma de software compuesto por un conjunto de herramientas de programación de código abierto multiplataforma 
+                        para desarrollar lo que el proyecto llama "Aplicaciones de Cliente Enriquecido", opuesto a las aplicaciones "Cliente-liviano" basadas en navegadores.
+
+                    </p><br><br>
+
+                    <img src="img/Tarea No.12/aplicacion.png" style="margin-left: 100px; height: 170px; width: 200px;"><img src="img/Tarea No.12/aplicacion2.png" style="margin-left: 50px; height: 170px; width: 440px;">  <br><br><br><br><br>
+
+                    <h3>¿A que tipo de paradigma pertenece? - Orientado a objetos, imperativo</h3><br>
+
+                    <p>Ada pertenece principalmente a los paradigmas Orientado a objetos e imperativo, ya que en si ada como se menciono anteriormente es Ada es 
+                        un lenguaje de programación orientado a objetos y fuertemente tipado de forma estática que fue diseñado por Jean Ichbiah de CII Honeywell 
+                        SBull por encargo del Departamento de Defensa de los Estados Unidos. <br><br>
+                        
+                        Ademas que es un lenguaje multipropósito, orientado a objetos y concurrente, pudiendo llegar desde la facilidad de Pascal hasta la
+                         flexibilidad de C++. 
+
+                    </p><br><br>
+
+
+
+                    <h3>Ejemplo de un programa escrito en este lenguaje</h3><br><br><br>
+                    <img src="img/Tarea No.12/ejemplo.png" style="margin-left: 45px; width: 805px; height: 400px;"><br>
+                    <img src="img/Tarea No.12/ejemplo2.png" style="margin-left: 50px; width: 800px; height: 150px;">
+
+
+                </div>
+            </article>
+            <div class="botones">
+
+                    <button class="button_anterior"><a href="tarea11.html">Anterior</a></button>
+
+                    <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                    <button class="button_siguiente"><a href="tarea13.html">Siguiente</a></button>
+            </div>
+    </main>
+</body>
+</html>

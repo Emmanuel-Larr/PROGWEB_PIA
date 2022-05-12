@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea No.16</title>
+    <link rel="stylesheet" href="Css/tarea16_css.css">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>1945008</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="personales.html">Personales (Inicio)</a></li>
+                    <li><a href="tareas.html">Tareas (Inicio)</a></li>
+                </ul>
+            </nav>
+            <div class="botones">
+
+                <button class="button_anterior"><a href="tarea15.html">Anterior</a></button>
+
+                <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                <button class="button_siguiente"><a href="tarea17.html">Siguiente</a></button>
+            </div>
+            <article>
+
+                <div class="Conceptos">
+
+                    <h1>Tarea No.16</h1><br>
+                    <div class="descripcion">
+                        <h4>Descripcion:</h4><br>
+                        <p style="font-size: 20px;"><strong>Conversión de Temperatura</strong></p><br>
+                        <li>Elabore un programa en JAVA que mediante un Menú 
+                            de opciones permita calcular la conversión de escala de 
+                            temperatura:</li><br>
+                            <ul>
+                                <li>1.- De grados Centígrados a grados Farenheit</li><br>
+                                <li>2.- De grados Farenheit a grados Centígrados</li><br>
+                            </ul>
+                        <li> (Nota: Usar el cuadro de dialogo, showOptionDialog(), 
+                            para seleccionar : °C -> °F y otro °F -> °C, )</li>
+                    </div> <br><br>
+
+                    <h3>Programa Tarea 16 - Codigo</h3> <br>
+                    <div style="border: black solid 1px; padding: 5px; width: 940px;">
+<pre style="font-size: 14px;">
+/*Alumno: Emmanuel Enrique Larraga Bueno Matricula: 1945008 Carrera: ITS*/
+package tarea_16;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class Tarea_16 {
+
+    public static void main(String[] args) {
+        
+        double num = Double.parseDouble(JOptionPane.showInputDialog("Ingresa un numero:"));
+        String [] arreglo = {"C° --> F°", "F° --> C°"};
+        int opcion=JOptionPane.showOptionDialog(null,"Eliga:\n1.- Centigrados a Farenheit\n2.- Farenheit a Centigrados", 
+                "Conversiones",0, JOptionPane.QUESTION_MESSAGE, null, arreglo, "");
+        System.out.println(opcion);
+        
+        if (opcion == 1)
+        {
+            JOptionPane.showMessageDialog(null, "F° --> C° - Respuesta:_" +(num-32)*5/9);
+        }
+        else    
+        {
+            JOptionPane.showMessageDialog(null, "C° --> F° - Respuesta:_" +((num*1.8000+32.00)));
+        }
+    }
+    
+}
+</pre>
+
+                    </div>
+                    
+                    <br><br><br>
+
+                    <h4>Ejecucion en del rograma Java:</h4><br>
+                    
+
+                    <img src="img/Tarea No.16/prog.png" style="width: 900px; height: 530px;"><br>
+                    <img src="img/Tarea No.16/prog2.png" style="width: 900px; height: 530px;" ><br>
+                    <img src="img/Tarea No.16/prog3.png" style="width: 900px; height: 530px;" ><br>
+                    <img src="img/Tarea No.16/prog4.png" style="width: 900px; height: 530px;"><br>
+                    
+                    
+
+
+            </article>
+            <div class="botones">
+
+                    <button class="button_anterior"><a href="tarea15.html">Anterior</a></button>
+
+                    <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                    <button class="button_siguiente"><a href="tarea17.html">Siguiente</a></button>
+            </div>
+
+            
+    </main>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea No.5</title>
+    <link rel="stylesheet" href="Css/tarea5_css.css">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>1945008</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="personales.html">Personales (Inicio)</a></li>
+                    <li><a href="tareas.html">Tareas (Inicio)</a></li>
+                </ul>
+            </nav>
+            <div class="botones">
+
+                <button class="button_anterior"><a href="tarea4.html">Anterior</a></button>
+
+                <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                <button class="button_siguiente"><a href="tarea6.html">Siguiente</a></button>
+            </div>
+            <article>
+
+                <div class="Conceptos">
+
+                    <h1>Tarea No.5</h1><br>
+                    <div class="descripcion">
+                        <h4>Descripcion:</h4><br>
+                        <li><strong>Del lenguaje Prolog</strong></li>
+                        <li>Investigar:</li>
+                            <ul>
+                                <li>Simbolos, sintaxis, esqueleto de los programas.</li>
+                                <li>Aplicacion a descargar para editar y ejecutar.</li>
+                                <li>A que tipo de paradigma pertenece.</li>
+                                <li>Un ejemplo de un programa escrito en ese lenguaje <br> (NO EL PROGRAMA "HOLA MUNDO").</li>
+                            </ul>
+                    </div> <br><br>
+
+                    <h3>Lenguaje Prolog</h3> <br>
+
+                    <img src="img/Tarea No.5/prolog.png" style="float: right; width: 300px; height: 130px; margin-left: 20px; margin-bottom: 20px; border: black solid 2px;" >
+
+                    <p>Para el enguaje de programación lógico e interpretado Prolog la programación lógica es un paradigma 
+                        de los lenguajes de programación en el cual los programas se consideran como una serie de aserciones 
+                        lógicas. A diferencia de otros lenguajes, 
+                        Prolog no es un lenguaje de programación para usos generales, sino que esta orientado a resolver problemas usando 
+                        el cálculo de predicados.<br><br>
+
+                        Pero en si, el lenguaje prolog es un lenguaje de programación lógico e interpretado usado habitualmente en el campo de la Inteligencia artificial
+                    </p><br><br>
+
+                    <h3>Sintaxis y Simbolos</h3><br><br><br>
+
+                    <h4>Sintaxis General con simbolos y operadores</h4><br>
+                    <div class="simbolos" style="padding-top: 10px; margin-left: 220px; border: black solid 2px; width: 450px; height: 300px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Comentarios = /*...*/</li><br>
+                                <li>Predicados = nombre(term1,...,termN)</li><br>
+                                <li>Constantes Simbolicas = a,x,2,juan,"camisa"</li><br>
+                                <li>Constantes = 2,355,-1</li><br>
+                                <li>Variables = X,Y,Nombre(1*letra literal en mayusculas)</li><br>
+                                <li>Estructura(Funcion) = Function(arg1,...argN )</li><br>
+                                <li>Hecho = Predicado(...)</li><br>
+                                <li>Regla = Consecuente :- Antecedente</li><br>
+                        
+                            </ul>
+                        </div><br><br>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 350px; height: 300px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Sqrt(X) = Calcula la raíz cuadrada de la variable</li><br>
+                                <li>log(X) = Calcula el logaritmo de X</li><br>
+                                <li>ln(X) = Calcula el logaritmo natural de X</li><br>
+                                <li>abs(B) = Regresa el valor absoluto de B</li><br>
+                                <li>sin(T) = Seno de T</li><br>
+                                <li>cos(A) = Coseno de A</li><br>
+                                <li>tan(C) = Tangente de C</li><br>
+                            </ul>
+                        </div>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 230px; height: 300px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>+ = SUMA</li><br>
+                                <li>- =  RESTA</li><br>
+                                <li>/ =  DIVISIÓN</li><br>
+                                <li>// =  DIVISION ENTERA</li><br>
+                                <li>MOD =  RESIDUO</li><br>
+                                <li>^ =  POTENCIA</li><br>
+                            </ul>
+                        </div>
+                    <div class="simbolos" style="padding-top: 10px; display: inline-block; margin-left: 0px; border: black solid 2px; width: 330px; height: 300px; padding: 5px;">
+                    <p>
+                        <ul>
+                            <li>=  IGUAL QUE</li><br>
+                            <li>> = MAYOR QUE</li><br>
+                            <li>>= = MAYOR O IGUAL QUE</li><br>
+                            <li>>= = MENOR O IGUAL QUE</li><br>
+                            <li> <> = DESIGUAL QUE</li><br>
+                            <li>=/= = DIFERENTE QUE</li><br>
+                            <li>is = EVALUADOR DE EXPRESIÓN</li><br>
+                            <li>seed = GENERADOR DE NÚMEROS ALEATORIOS</li><br>
+                        </ul>
+                    </div><br><br>
+                    
+                    <h3>Esqueleto de los programas</h3><br>
+                    <p>La propia programacion del lenguaje Prolog consiste en declarar algunos HECHOS sobre los objetos y sus relaciones. 
+                        Ademas de hacer PREGUNTAS sobre los objetos y sus 
+                        relaciones. Las cláusulas de Horn son las instrucciones básicas del lenguaje de programación ProLog.</p><br><br>
+
+                        <img src="img/Tarea No.5/esqueleto.png" style="margin-left: 50px; height: 300px; width: 400px;"> <img src="img/Tarea No.5/esqueleto2.png" style="height: 300px; width: 400px;"><br><br><br><br>
+
+                    <h3>Aplicacion a descargar para editar y ejecutar</h3><br>
+                    <p>SWI-Prolog principalmente es una implementación en código abierto que en inglés seria, open source del lenguaje de programación Prolog.
+                       Su autor principal es Jan Wielemaker. SWI-Prolog funciona en las plataformas Unix, Windows y Macintosh.</p><br><br>
+
+                    <img src="img/Tarea No.5/swi.png" style="margin-left: 200px; height: 170px; width: 500px;"><br><br><br><br><br>
+
+
+                    <h3>¿A que tipo de paradigma pertenece? - Paradigmas lógicos y declarativos</h3><br>
+
+                    <p>Prolog principalmente pertenece y se enmarca en el paradigma de los lenguajes lógicos y declarativos, esto es lo que lo
+                        diferencia enormemente de otros lenguajes más populares tales como Fortran, Pascal, C o Java. <br><br>
+
+                       La propia programación lógica es una variedad de lo que conocemos con programación declarativa, un paradigma opuesto a 
+                       prácticamente todos los lenguajes de programación populares, desde ensamblador a Python pasando por BASIC, C o 
+                       Java, a los que agrupamos en la categoría de la programación imperativa.
+                    </p><br><br>
+
+                    <h3>Ejemplo de un programa escrito en este lenguaje</h3><br><br><br>
+                    <img src="img/Tarea No.5/codigoprolog.png" style="margin-left: 50px; margin-bottom: 200px; width: 400px; height: 700px;"><img src="img/Tarea No.5/comp.png" style="width: 400px; height: 900px;">
+
+
+                </div>
+            </article>
+            <div class="botones">
+
+                    <button class="button_anterior"><a href="tarea4.html">Anterior</a></button>
+
+                    <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                    <button class="button_siguiente"><a href="tarea6.html">Siguiente</a></button>
+            </div>
+
+            
+    </main>
+</body>
+</html>

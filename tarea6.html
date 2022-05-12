@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea No.6</title>
+    <link rel="stylesheet" href="Css/tarea6_css.css">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>1945008</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="personales.html">Personales (Inicio)</a></li>
+                    <li><a href="tareas.html">Tareas (Inicio)</a></li>
+                </ul>
+            </nav>
+            <div class="botones">
+
+                <button class="button_anterior"><a href="tarea5.html">Anterior</a></button>
+
+                <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                <button class="button_siguiente"><a href="tarea7.html">Siguiente</a></button>
+        </div>
+
+            <article>
+
+                <div class="Conceptos">
+
+                    <h1>Tarea No.6</h1><br>
+                    <div class="descripcion">
+                        <h4>Descripcion:</h4><br>
+                        <li><strong>Del lenguaje Python</strong></li>
+                        <li>Investigar:</li>
+                            <ul>
+                                <li>Simbolos, sintaxis, esqueleto de los programas.</li>
+                                <li>Aplicacion a descargar para editar y ejecutar.</li>
+                                <li>A que tipo de paradigma pertenece.</li>
+                                <li>Un ejemplo de un programa escrito en ese lenguaje <br> (NO EL PROGRAMA "HOLA MUNDO").</li>
+                            </ul>
+                    </div> <br><br>
+
+                    <h3>Lenguaje Python</h3><br>
+
+                    <img src="img/Tarea No.6/python.png" style="float: right; width: 220px; height: 190px; margin-left: 20px;" >
+
+                    <p>
+
+                        Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.​ Se trata de un lenguaje de programación 
+                        multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional. <br><br>
+                        Python es un lenguaje sencillo de leer y escribir debido a su alta similitud con el lenguaje humano. Además, se trata de un lenguaje multiplataforma 
+                        de código abierto y, por lo tanto, gratuito, lo que permite desarrollar software sin límites. Con el paso del tiempo, Python ha ido ganando adeptos 
+                        gracias a su sencillez y a sus amplias posibilidades, sobre todo en los últimos años, ya que facilita trabajar con 
+                        inteligencia artificial, big data, machine learning y data science, entre muchos otros campos en auge. 
+                    </p><br><br>
+
+
+                    <h3>Sintaxis y Simbolos</h3><br><br><br>
+
+                    <h4>Sintaxis General con simbolos y operadores</h4><br>
+                    <div class="simbolos" style="padding-top: 10px; margin-left: 220px; border: black solid 2px; width: 450px; height: 520px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Comentarios = #</li><br>
+                                <li>Asignacion = (=)</li><br>
+                                <li>funciones = >>>def nombrefuncion(arg1.arg2)</li><br>
+                                <li>Condicion = If, elif condicion, else</li><br>
+                                <li>For = >>>for variable in variable_lista</li><br>
+                                <li>Range = Range(i)</li><br>
+                                <li>filter = (funcion, lista_arg)</li><br>
+                                <li>map = (funcion, lista_arg)</li><br>
+                                <li>reduce = reduce(funcion, lista_arg)</li><br>
+                                <li>List Comprehensions = >>>vec = [2,4,6]</li><br>
+                                <li>Class = >>>class MiClase</li><br>
+                                <li>init = Def __init__(self)</li><br>
+                                <li>Variables = >>>x=MiClase()</li><br>
+                                <li>Subclase = class NombreDeClase(NombreSubclase)</li><br>
+                            </ul>
+                        </div><br><br>
+                        <div class="simbolos" style="padding-top: 10px; margin-left: 245px; border: black solid 2px; width: 400px; height: 270px; padding: 5px;">
+                            <p>
+                                <ul>
+                                    <li>+ = Suma</li><br>
+                                    <li>- =  Resta</li><br>
+                                    <li>* = Multiplicacion</li><br>
+                                    <li>/ =  Division</li><br>
+                                    <li>% =  Módulo: Devolverá el resto de la división</li><br>
+                                    <li>** =  Exponente: Exponencial de un número</li><br>
+                                    <li>// =  División devuelve el entero de la misma	</li><br>
+                                </ul>
+                            </div><br><br>
+                    
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 550px; height: 400px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>"=" = Asigna un valor a un elemento. Puede ser  variable, lista, diccionario, tupla, etc.</li><br>
+                                <li>"+=" = El primer elemento es igual a la suma del primer elemento con el segundo. Se suele utilizar como contador..</li><br>
+                                <li>"-=" = El primer elemento es igual a la resta del primer elemento con el segundo. Se suele utilizar como contador negativo.</li><br>
+                                <li>"*=" = El primer elemento es igual a la multiplicación del primer elemento con el segundo.</li><br>
+                                <li>"/=" = El primer elemento es igual a la división del primer elemento con el segundo.</li><br>
+                                <li>"%=" = El primer elemento es igual a el Módulo: resto de la división del primer elemento con el segundo.</li><br>
+                                <li>"**=" = El primer elemento es igual a el resultado de la exponente del primer elemento con el segundo.</li><br>
+
+                            </ul>
+                        </div>
+
+                        <div class="simbolos" style="padding-top: 10px; display: inline-block; margin-left: 0px; border: black solid 2px; width: 360px; height: 400px; padding: 5px;">
+                            <p>
+                                <ul>
+                                    <li>"==" = Si dos valores son exactamente iguales!</li><br>
+                                    <li>"!=" = Si dos valores son diferentes devuelve True!</li><br>
+                                    <li>">" = Si el valor de la izquierda es mayor que el de la derecha devuelve True</li><br>
+                                    <li>"<" = Si el valor de la izquierda es menor que el de la derecha devuelve True</li><br>
+                                    <li>">=" = Si el valor de la izquierda es mayor o igual que el de la derecha devuelve True</li><br>
+                                    <li>"<=" = Si el valor de la izquierda es menor o igual que el de la derecha devuelve True</li><br>
+                                </ul>
+                            </div><br><br>
+                    
+                    <h3>Esqueleto de los programas</h3><br>
+                    <p></p><br><br>
+
+                        <img src="img/Tarea No.6/esqueleto.png" style="margin-left: 50px; height: 300px; width: 400px;"> <img src="img/Tarea No.6/esqueleto2.png" style="height: 300px; width: 400px;"><br><br><br><br>
+
+                    
+                    <h3>Aplicacion a descargar para editar y ejecutar</h3><br><br><br><br>
+
+                    <pre style="margin-left: 40px;">| <strong class="strong2">SublimeText</strong> | <strong class="strong2">PyCharm IDE</strong> | <strong class="strong2">Visual Studio Code</strong> | <strong class="strong2">Komodo IDE</strong> | <strong class="strong2">PyScripter</strong> |</pre>
+                    
+                    <img src="img/Tarea No.6/prog1.png" style="margin-left: 70px;"><img src="img/Tarea No.6/prog2.png" style="margin-left:50px;"><img src="img/Tarea No.6/prog3.png" style="margin-left: 80px;"><img src="img/Tarea No.6/prog4.png" style="margin-left: 90px;"><img src="img/Tarea No.6/prog5.png" style="margin-left: 50px;">
+                    <br><br><br><br><br><br>
+
+                    <h3>¿A que tipo de paradigma pertenece? - Paradigma orientado a objetos</h3><br>
+                    <p>
+                        Python principalmente es un lenguaje de programación multiparadigma. Esto significa que más que forzar a los programadores a adoptar un estilo particular de 
+                        programación, permite varios estilos: programación orientada a objetos, programación imperativa y programación funcional. <br><br>
+
+                        Para este modelo de paradigma principalmente se construyen modelos de objetos que representan elementos u objetos del problema a resolver, 
+                        que tienen distintas características y funciones. Además, que permiten separar los diferentes componentes de un programa, 
+                        simplificando así su creación, depuración y posteriores mejoras. Algunos ejemplos de lenguajes orientado a objetos serian Java, Python o C#.
+
+                    </p><br><br>
+
+                    <h3>Ejemplo de un programa escrito en este lenguaje</h3><br><br><br>
+                    <img src="img/Tarea No.6/ejemplo.png" style="margin-left: 100px; width: 700px; height: 400px;"><img src="img/Tarea No.6/ejemplo2.png" style="margin-left: 100px; width: 700px; height: 400px;">
+
+
+                </div>
+            </article>
+            <div class="botones">
+
+                    <button class="button_anterior"><a href="tarea5.html">Anterior</a></button>
+
+                    <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                    <button class="button_siguiente"><a href="tarea7.html">Siguiente</a></button>
+            </div>
+
+            
+    </main>
+</body>
+</html>

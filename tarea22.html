@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea No.22</title>
+    <link rel="stylesheet" href="Css/tarea22_css.css">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>1945008</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="personales.html">Personales (Inicio)</a></li>
+                    <li><a href="tareas.html">Tareas (Inicio)</a></li>
+                </ul>
+            </nav>
+            <div class="botones">
+
+                <button class="button_anterior"><a href="tarea21.html">Anterior</a></button>
+
+                <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                <button class="button_siguiente"><a href="tareas.html">Siguiente</a></button>
+            </div>
+            <article>
+
+                <div class="Conceptos">
+
+                    <h1>Tarea No.22</h1><br>
+                    <div class="descripcion">
+                        <h4>Descripcion:</h4><br>
+                        <p style="font-size: 20px;"><strong>Multiplicación de matrices</strong></p><br>
+                        
+                        <li> Elaborar un programa en JAVA que calcule la 
+                            multiplicación de dos matrices que ingrese el usuario. </li><br>
+                        <li>(Nota: Validar lo que sea necesario para poder realizar 
+                            la multiplicación de matrices)</li><br>
+                    </div> <br><br>
+
+                    <h3>Programa Tarea 22 - Codigo</h3> <br>
+                    <div style="border: black solid 1px; padding: 5px; width: 940px;">
+<pre style="font-size: 14px;">
+
+/*Alumno: Emmanuel Enrique Larraga Bueno Matricula: 1945008 Carrera: ITS*/
+
+
+package tarea_22;
+import java.util.Scanner;
+
+public class Tarea_22 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System. in);
+        System.out.println("Ingrese la cantidad de filas Matriz 1:");
+        int fila_1 = sc.nextInt();
+        
+        System.out.println("Ingrese la cantidad de columnas Matriz 1:");
+        int columna_1 = sc.nextInt();
+        
+        System.out.println("Ingrese la cantidad de filas Matriz 2:");
+        int fila_2 = sc.nextInt();
+        
+        System.out.println("Ingrese la cantidad de columnas Matriz 2:");
+        int columna_2 = sc.nextInt();
+        
+    
+        int [][] matriz_1 = new int[columna_1][fila_1];
+        int [][] matriz_2 = new int[columna_2][fila_2];                 
+        int [][] matriz_final= new int[fila_1][columna_2];
+        
+        System.out.println("------------ Matriz No.1 ------------");
+        
+        for (int i=0;i< fila_1;i++)
+        {
+            for (int j=0;j< fila_1;j++)
+            {
+                System.out.print("["+(i+1)+"]["+(j+1)+"] = ");
+                matriz_1[i][j] = sc.nextInt();
+                
+            }
+        }
+        
+        System.out.println("------------ Matriz No.2 ------------");
+        
+        for (int i=0;i< fila_2;i++)
+        {
+            for (int j=0;j< columna_2;j++)
+            {
+                System.out.print("["+(i+1)+"]["+(j+1)+"] = ");
+                matriz_2[i][j] = sc.nextInt(); 
+            }
+        }
+        
+        System.out.println("------------ Matriz No.1 ------------");
+        
+        for (int i=0;i< fila_1;i++)
+        {
+            for (int j=0;j< columna_1;j++)
+            {
+                System.out.print("["+matriz_1[i][j]+"]");  
+            }
+            System.out.println(" ");
+            
+        }
+        
+        System.out.println("------------ Matriz No.2 ------------");
+        
+        for (int i=0;i< fila_2;i++)
+        {
+            for (int j=0;j< columna_2;j++)
+            {
+                System.out.print("["+matriz_2[i][j]+"]");
+            }
+            System.out.println("");
+        }
+        
+        
+        System.out.println("------------ Matriz Final ------------");
+        
+        for (int i=0;i< fila_1;i++)
+        {
+            for (int j=0;j< columna_2;j++)
+            {
+                for (int h=0;h< columna_1;h++)
+                {
+                    matriz_final[i][j] += matriz_1[i][h] * matriz_2[h][j];
+                }
+                System.out.print("["+matriz_final[i][j]+"]");
+            }
+            System.out.println("");
+        }
+    }
+}
+   
+
+
+</pre>
+                    </div>
+
+                    <br><br><br>
+
+                    <h4>Ejecucion en del rograma Java:</h4><br>
+                    
+
+                    <img src="img/Tarea No.22/programa.png" style="width: 900px; height: 530px;"><br>
+                    <img src="img/Tarea No.22/programa2.png" style="width: 900px; height: 530px;"><br>
+
+            </article>
+            <div class="botones">
+
+                    <button class="button_anterior"><a href="tarea21.html">Anterior</a></button>
+
+                    <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                    <button class="button_siguiente"><a href="tareas.html">Siguiente</a></button>
+            </div>
+
+            
+    </main>
+</body>
+</html>

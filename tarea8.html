@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea No.8</title>
+    <link rel="stylesheet" href="Css/tarea8_css.css">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>1945008</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="personales.html">Personales (Inicio)</a></li>
+                    <li><a href="tareas.html">Tareas (Inicio)</a></li>
+                </ul>
+            </nav>
+            <div class="botones">
+
+                <button class="button_anterior"><a href="tarea7.html">Anterior</a></button>
+
+                <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                <button class="button_siguiente"><a href="tarea9.html">Siguiente</a></button>
+            </div>
+            <article>
+
+                <div class="Conceptos">
+
+                    <h1>Tarea No.8</h1><br>
+                    <div class="descripcion">
+                        <h4>Descripcion:</h4><br>
+                        <li><strong>Del lenguaje Haskell</strong></li>
+                        <li>Investigar:</li>
+                            <ul>
+                                <li>Simbolos, sintaxis, esqueleto de los programas.</li>
+                                <li>Aplicacion a descargar para editar y ejecutar.</li>
+                                <li>A que tipo de paradigma pertenece.</li>
+                                <li>Un ejemplo de un programa escrito en ese lenguaje <br> (NO EL PROGRAMA "HOLA MUNDO").</li>
+                            </ul>
+                    </div> <br><br>
+
+                    <h3>Lenguaje Haskell</h3> <br>
+
+                    <img src="img/Tarea No.8/haskell.png" style="float: right; width: 300px; height: 130px; margin-left: 20px; margin-bottom: 20px;" >
+
+                    <p> Haskell es un lenguaje de programación puramente funcional, cuya primera versión fue lanzada en 1990. Su nombre proviene del matemático Haskell Brooks Curry, 
+                        que sentó las bases de los lenguajes de programación funcional con su trabajo sobre lógica combinatoria entre 1920 y 1960. <br><br>
+                        Haskell principalmente se basa en 
+                        el cálculo lambda lenguaje formal para la investigación de funciones, por lo que el logotipo del lenguaje contiene el símbolo de esta letra griega.
+
+                    </p><br><br>
+
+                    <h3>Sintaxis y Simbolos</h3><br><br><br>
+
+                    <h4>Sintaxis General con simbolos y operadores</h4><br>
+                    <div class="simbolos" style="padding-top: 10px; margin-left: 220px; border: black solid 2px; width: 450px; height: 620px; padding: 5px;">
+                        <p>
+                            <ul>
+                               <p><strong>Funciones y operadores</strong></p><br>
+                                <li>(&&) :: Bool -> Bool -> Bool <br>
+                                    (||) :: Bool -> Bool -> Bool <br>
+                                    not :: Bool -> Bool <br>
+                                    otherwise :: Bool <br><br>
+                                    (+)(-)(*) :: Int -> Int -> Int<br>
+                                    (↑) :: Int -> Int -> Int<br>
+                                    div, mod :: Int -> Int -> Int<br>
+                                    abs :: Int -> Int<br>
+                                    signum :: Int -> Int<br>
+                                    negate :: Int -> Int<br>
+                                    even, odd :: Int -> Bool<br><br>
+                                    (+)(-)(*)(/) :: Float -> Float -> Float<br>
+                                    (↑) :: Float -> Int -> Float<br>
+                                    (**) :: Float -> Float -> Float<br>
+                                    abs :: Float -> Float<br>
+                                    signum :: Float -> Float (-1.0, 0.0, 1.0)<br>
+                                    negate :: Float -> Float<br>
+                                    sin, asin, cos, acos, tan, atan :: Float -> Float<br><br>
+                                    atan2 :: Float -> Float -> Float<br>
+                                    log, exp :: Float -> Float<br>
+                                    sqrt :: Float -> Float<br>
+                                    pi :: Float<br>
+                                    trucate, round, floor, ceiling :: Float -> Float<br>
+                                    fromInt :: Int -> <br>
+                                    fromInteger :: Integer -> Float<br>
+                            </ul>
+                        </div><br><br>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 220px; height: 300px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>’\n’ Salto de l´ınea</li><br>
+                                <li>’\n’ Salto de l´ınea</li><br>
+                                <li>’\’’ Comilla</li><br>
+                                <li>’\’’’ Comilla doble</li><br>
+                                <li>’\’’’ Comilla doble</li><br>
+                                <li>ord :: Char -> Int </li><br>
+                                <li>chr :: Int -> Char</li><br>
+                            </ul>
+                        </div>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 350px; height: 440px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>(<) mayor que </li><br>
+                                <li>(<) menor que </li><br>
+                                <li>(==) igual que</li><br>
+                                <li>(≥) mayor o igual que</li><br>
+                                <li>(≤) menor o igual que</li><br>
+                                <li>(6=) distinto de</li><br>
+                                <li>-- Comentario</li><br>
+                                <li>Operadores = ! #$%& ∗ + · / <=>?@\ ↑ |− ∼</li><br>
+                                <li>Predefinidos = + + + && || ≤ == 6= · //, @@ % − + − W V < + > ?</li><br>
+                                <li>Reservados =  :: → ⇒ : .. = @ \ | ← ∼</li><br>
+                                
+                            </ul>
+                        </div>
+                    <div class="simbolos" style="padding-top: 10px; display: inline-block; margin-left: 0px; border: black solid 2px; width: 330px; height: 440px; padding: 5px;">
+                    <p>
+                        <ul>
+                            
+                            <li>Prioridad y asciatividad = infix [prioridad] [identificador] N</li><br><br>
+                            <li>Patrones constantes = <br><br>
+                                f :: Integer -> Boolbr<br>
+                                = True<br>
+                                f 2 = False<br>
+                                Main> f 1<br>
+                                True :: Bool<br>
+                                Main> f 3<br>
+                                Program error: f 3<br></li><br>
+                            <li>Recursividad = <br>
+                                fact :: Integer -> Integer<br>
+                                fact 0 = 1<br>
+                                fact n = n * fact(n - 1)<br></li><br>
+                        </ul>
+                    </div><br><br>
+                    
+                    <h3>Esqueleto de los programas</h3><br>
+                    <p></p><br><br>
+
+                        <img src="img/Tarea No.8/est.png" style="margin-left: 50px; height: 300px; width: 400px;"> <img src="img/Tarea No.8/est2.png" style="height: 300px; width: 400px;"><br><br><br><br>
+
+                    <h3>Aplicacion a descargar para editar y ejecutar</h3><br>
+                    <p>La plataforma Haskell es una colección de paquetes de software, herramientas y bibliotecas que crean una plataforma común para usar y desarrollar aplicaciones en Haskell, ademas que es muy
+                        conocida y de las aplicaciones o softwares mas utilizados en lo que respecta la programacion en haskell.
+
+                    </p><br><br>
+
+                    <img src="img/Tarea No.8/aplicacion.png" style="margin-left: 200px; height: 120px; width: 500px;"><br><br><br>
+
+                    <h3>¿A que tipo de paradigma pertenece? - Paradigma Funcional</h3><br>
+
+                    <p> Haskell principalmente pertenece al paradigma funcional, ya que el propio parsadigma funcional está basado en el modelo matemático de composición funcional. 
+                        En este modelo, el resultado de un cálculo es la entrada del siguiente, y así sucesivamente hasta que una composición produce el valor deseado.<br><br>
+                        Ademas que la programación funcional incorpora el concepto de función como objeto de primera clase, lo que significa que las funciones se pueden tratar 
+                        como datos y pueden pasar como parámetros, calculadas y devueltas como valores normales, y mezcladas en el cálculo con otras formas de datos.
+
+                    </p><br><br>
+
+                    <h3>Ejemplo de un programa escrito en este lenguaje</h3><br>
+                    <p>En este programa de ejemplo principalmente, dado un número n entero se separa el primer dígito haciendo uso de la función mod n 10, para luego este sumar al cociente de la división del número n entre 10, (div n 10). Pero en si el programa es un conteo,suma y producto de dígitos</p><br>
+                    <img src="img/Tarea No.8/programa.png" style="margin-left: 50px; margin-bottom: 200px; width: 850px; height: 270px;">
+
+
+                </div>
+            </article>
+            <div class="botones">
+
+                    <button class="button_anterior"><a href="tarea7.html">Anterior</a></button>
+
+                    <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                    <button class="button_siguiente"><a href="tarea9.html">Siguiente</a></button>
+            </div>
+
+            
+    </main>
+</body>
+</html>

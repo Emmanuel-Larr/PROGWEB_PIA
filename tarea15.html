@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea No.15</title>
+    <link rel="stylesheet" href="Css/tarea15_css.css">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>1945008</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="personales.html">Personales (Inicio)</a></li>
+                    <li><a href="tareas.html">Tareas (Inicio)</a></li>
+                </ul>
+            </nav>
+            <div class="botones">
+
+                <button class="button_anterior"><a href="tarea14.html">Anterior</a></button>
+
+                <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                <button class="button_siguiente"><a href="tarea16.html">Siguiente</a></button>
+            </div>
+            <article>
+
+                <div class="Conceptos">
+
+                    <h1>Tarea No.15</h1><br>
+                    <div class="descripcion">
+                        <h4>Descripcion:</h4><br>
+                        <li><strong>Del lenguaje Ruby</strong></li>
+                        <li>Investigar:</li>
+                            <ul>
+                                <li>Simbolos, sintaxis, esqueleto de los programas.</li>
+                                <li>Aplicacion a descargar para editar y ejecutar.</li>
+                                <li>A que tipo de paradigma pertenece.</li>
+                                <li>Un ejemplo de un programa escrito en ese lenguaje <br> (NO EL PROGRAMA "HOLA MUNDO").</li>
+                            </ul>
+                    </div> <br><br>
+
+                    <h3>Lenguaje Ruby</h3> <br>
+
+                    <img src="img/Tarea No.15/ruby.png" style="float: right; width: 200px; height: 130px; margin-left: 20px;" >
+
+                    <p>Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objetos, creado por el 
+                        programador japonés Yukihiro "Matz" Matsumoto, quien comenzó a trabajar en Ruby en 1993, y lo presentó públicamente en 1995. <br><br>
+
+                        Ademas que el lenguaje Ruby se utiliza principalmente en el desarrollo de aplicaciones web, pero también se puede utilizar para desarrollar otro 
+                        tipo de aplicaciones de software, como veremos más adelante. Este lenguaje está disponible en plataformas como Windows, Linux y muchas otras, 
+                        considerándose multiplataforma.
+                    </p><br><br>
+
+                    <h3>Sintaxis y Simbolos</h3><br><br><br>
+
+                    <h4>Sintaxis General con simbolos y operadores</h4><br>
+                    <div class="simbolos" style="padding-top: 10px; margin-left: 220px; border: black solid 2px; width: 450px; height: 740px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>irb = Es el intérprete interactivo de ruby, donde se pueden probar al vuelo porciones de código.</li><br>
+                                <li>ri = ri String#tr</li><br>
+                                <li>Variables / Métodos = estudiante, i, epsilon, piso_grande</li><br>
+                                <li>Constantes = PDF_KEY, R2D2, PERSONA_VIAJE</li><br>
+                                <li>Variables de objeto = @nombre, @maximo, @hora_comer</li><br>
+                                <li>Variables de clase = objeto, llave_maestra</li><br>
+                                <li>Variables globlales = </li><br>
+                                <li>Símbolos = nombre, :edad, :Clase</li><br>
+                                <li>Clases y objetos = .método</li><br>
+                                <li>Clases = class Persona</li><br>
+                                <li>Herencia de clases = class Matz < Persona</li><br>
+                                <li>Módulos = module Trig  </li><br>
+                                <li>Arrays = ['Un', 'array', 'con', 5, 'entradas'].join(' ') # Un array con 5 entradas</li><br>
+                                <li>Hashes  = h0['uno']    </li><br>
+                                <li>Iteradores = def f(cont, &bloque)</li><br>
+                                <li>Bloques =  def initialize(&bloque)</li><br>
+                                <li>case =  case nombres.length</li><br>
+                                <li>condicionales =  control habitual</li><br>
+                            </ul>
+                        </div><br><br>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 460px; height: 800px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>verdadero y falso = puts valor ? true : false</li><br>
+                                <li>bucles = while (i < 10)</li><br>
+                                <li>funciones = def hola(programador)</li><br>
+                                <li>Expresiones regulares = /(a|b)c/  <br><br>
+                                    / /<br>
+                                    \/^$|.+*?()[]\{\} <br>
+                                    \. P. ej: \\, \/<br>
+                                    ^, ., ab, a*, a+, a|b<br>
+                                </li><br>
+                                <li>testeo de unidades = test/unit,  Test::Unit::TestCase</li><br>
+                                <li>Palabras reservadas = <br><br>
+                                    BEGIN,	 class,	  ensure,   nil	,    self,     when,<br><br>
+                                    END,	 def,	  false,    not,    super,    while,<br><br>
+                                    alias,	 defined , for,	   or,	    then ,    yield,<br><br>
+                                    and,	 do,	  if,	   redo,    true,<br><br>
+                                    begin,	 else,	  in,	   rescue,   undef,<br><br>
+                                    break,   elsif,	  module,   retry,   unless,<br><br>
+                                    case,	 end,	  next,	   return,   until,<br><br>
+                                
+                                
+                                </li><br>
+                                <li>String literals = "this is a string expression\n"</li><br>
+                                <li>Command output = `date`, %x{ date }</li><br>
+                                <li>Expression substitution in strings = "my name is #{$ruby}"</li><br>
+                            </ul>
+                        </div>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 453px; height: 800px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Backslash notation = <br><br>
+                                    \t = tab(0x09)<br><br>
+                                    \n = newline(0x0a)<br><br>
+                                    \r = carriage return(0x0d)<br><br>
+                                    \f = form feed(0x0c)<br><br>
+                                    \b = backspace(0x08)<br><br>
+                                    \a = bell(0x07)<br><br>
+                                    \e = escape(0x1b)<br><br>
+                                    \s = whitespace(0x20)<br><br>
+                                    \nnn = character in octal value nnn<br><br>
+                                    \xnn = character in hexadecimal value nn<br><br>
+                                    \cx =control x<br><br>
+                                    \C-x =control x<br><br>
+                                    \M-x = meta x (c | 0x80)<br><br>
+                                    \M-\C-x = meta control x<br><br>
+                                    \x = character x itself<br><br>
+                                
+                                
+                                </li><br>
+                                <li>Symbols = :symbol<br><br>
+                                    :'symbol'<br><br>
+                                    :"symbol"<br><br>
+                                    "symbol".to_sym<br><br>
+                                    %s{symbol}<br><br>
+                                
+                                
+                                </li><br>
+
+
+                            </ul>
+                        </div>
+                        <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 300pxpx; border: black solid 2px; width: 460px; height: 1250px; padding: 5px;">
+                            <p>
+                                <ul>
+                                    <li>Regular expression = /^Ruby the OOPL/ <br><br>
+                                        ^ = beginning of a line or string<br><br>
+                                        $ = end of a line or string<br><br>
+                                        . = any character except newline<br><br>
+                                        \w = word character[0-9A-Za-z_]<br><br>
+                                        \W = non-word character<br><br>
+                                        \s = whitespace character[ \t\n\r\f]<br><br>
+                                        \S = non-whitespace character<br><br>
+                                        \d = digit, same as[0-9]<br><br>
+                                        \D = non-digit<br><br>
+                                        \A = beginning of a string<br><br>
+                                        \Z = end of a string, or before newline at the end<br><br>
+                                        \z = end of a string<br><br>
+                                        \b = word boundary(outside[]only)<br><br>
+                                        \B = non-word boundary<br><br>
+                                        \b = backspace(0x08)(inside[]only)<br><br>
+                                        [ ] = any single character of set
+
+                                    </li><br>
+                                    <li>Numeric literals = <br><br>
+                                        123 = integer<br><br>
+                                        -123 = integer(signed)<br><br>
+                                        1_234 = integer(underscore within decimal numbers ignored)<br><br>
+                                        123.45 = floating point number<br><br>
+                                        1.2e-3 = floating point number<br><br>
+                                        0xffff = hexadecimal integer<br><br>
+                                        0b01011 = binary integer<br><br>
+                                        0377 = octal integer<br><br>
+                                        ?a = ASCII code for character `a'(97)<br><br>
+                                        ?\C-a = Control-a(1)<br><br>
+                                        ?\M-a = Meta-a(225)<br><br>
+                                        ?\M-\C-a = Meta-Control-a(129)<br><br>
+                                        :symbol = Integer corresponding identifiers, variable names, and operators.<br><br>
+                                        In ?- = representation all backslash notations are available.
+                                    </li><br>
+                                </ul>
+                            </div>
+
+                        <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 300pxpx; border: black solid 2px; width: 453px; height: 1250px; padding: 5px;">
+                            <p>
+                                <ul>
+                                    <li>Hash expression = {1=>2, 2=>4, 3=>6}</li><br>
+                                    <li>Method invocation = [expr `::'] identifier [`(' expr...[`*' [expr]],[`&' expr] `)']</li><br>
+                                    <li>super = super(expr,...)</li><br>
+                                    <li>Assignment = variable '=' expr</li><br>
+                                    <li>Operator expressions = <br><br>
+
+                                        high   ::<br>
+                                               []<br>
+                                               **<br>
+                                               -(unary)  +(unary)  !  ~<br>
+                                               *  /  %<br>
+                                               +  -<br>
+                                               <<  >><br>
+                                               &<br>
+                                               |  ^<br>
+                                               >  >=  <  <=<br>
+                                               <=> ==  === !=  =~  !~<br>
+                                               &&<br>
+                                               ||<br>
+                                               .. ...<br>
+                                               =(+=, -=...)<br>
+                                               not<br>
+                                               and or<br>
+                                        low 
+                                    </li><br>
+                                    <li>Range expressions = expr `..' expr, expr `...' expr</li><br>
+                                    <li>Iterators = method_call do [`|' expr...`|'] expr...end</li><br>
+                                    <li>for = for lhs... in expr [do]</li><br>
+                                    <li>raise = raise message_or_exception</li><br>
+                                    <li>begin = begin, expr..[rescue [error_type,..]</li><br>
+                                    <li>retry = retry</li><br>
+                                    <li>break = break</li><br>
+                                    <li>next = next</li><br>
+                                    <li>BEGIN = BEGIN '{'expr..'}'</li><br>
+                                    <li>END = END '{' expr.. '}'</li><br>
+                                    <li>Class  = class identifier [`<' superclass ]</li><br>
+                                    <li>Module  = module identifier</li><br>
+                                    <li>alias = alias method-name method-name</li><br>
+                                    <li>undef = undef method-name</li><br>
+                                    <li>defined? = defined? expr</li><br>
+                                    <li>hash key = options = {}</li><br>
+                                    <li>keyword argument = url_for :controller => 'bug',</li><br>
+                                    <li>free-form enumeration = enum BugStatus { OPEN, CLOSED };</li><br>
+                                </ul>
+                            </div>
+                        <h6>.</h6><br><br>
+                    <h3>Esqueleto de los programas</h3><br>
+                    <p></p><br><br>
+
+                        <img src="img/Tarea No.15/est.png" style="margin-left: 110px; height: 400px; width: 700px;"><br><br><br><br>
+
+                    <h3>Aplicacion a descargar para editar y ejecutar</h3><br>
+                    <p></p><br><br>
+
+                    <img src="img/Tarea No.15/apli.png" style="margin-left: 60px; margin-right: 30px; height: 250px; width: 250px;">  <img src="img/Tarea No.15/apli2.png" style="margin-right: 50px; margin-bottom: 60px; height: 130px; width: 130px;"> <img src="img/Tarea No.15/apli3.png" style="margin-right: 30px; margin-bottom: 60px; height: 130px; width: 130px;">  <img src="img/Tarea No.15/apli4.png" style="margin-right: 30px; margin-bottom: 60px; height: 130px; width: 130px;"><br><br><br><br><br>
+
+
+                    <h3>¿A que tipo de paradigma pertenece? - Multiparadigma</h3><br>
+
+                    <p>Ruby ha sido descrito como un lenguaje de programación multiparadigma, que permite la programación procedimental definiendo funciones y 
+                        variables fuera de las clases haciéndolas parte del objeto raíz Object, adeams que esta tiene orientación a objetos, que en si todo es un objeto
+                         o funcionalmente tiene funciones anónimas, clausuras y continuaciones.   <br><br>
+                    </p><br><br>
+
+
+
+                    <h3>Ejemplo de un programa escrito en este lenguaje</h3><br><br><br>
+                    <img src="img/Tarea No.15/ejemplo.png" style="margin-left: 110px; width: 700px; height: 500px;">
+
+
+                </div>
+            </article>
+            <div class="botones">
+
+                    <button class="button_anterior"><a href="tarea14.html">Anterior</a></button>
+
+                    <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                    <button class="button_siguiente"><a href="tarea16.html">Siguiente</a></button>
+            </div>
+
+            
+    </main>
+</body>
+</html>

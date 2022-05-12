@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea No.13</title>
+    <link rel="stylesheet" href="Css/tarea13_css.css">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>1945008</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="personales.html">Personales (Inicio)</a></li>
+                    <li><a href="tareas.html">Tareas (Inicio)</a></li>
+                </ul>
+            </nav>
+            <div class="botones">
+
+                <button class="button_anterior"><a href="tarea12.html">Anterior</a></button>
+
+                <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                <button class="button_siguiente"><a href="tarea14.html">Siguiente</a></button>
+            </div>
+            <article>
+
+                <div class="Conceptos">
+
+                    <h1>Tarea No.13</h1><br>
+                    <div class="descripcion">
+                        <h4>Descripcion:</h4><br>
+                        <li><strong>Del lenguaje PHP</strong></li>
+                        <li>Investigar:</li>
+                            <ul>
+                                <li>Simbolos, sintaxis, esqueleto de los programas.</li>
+                                <li>Aplicacion a descargar para editar y ejecutar.</li>
+                                <li>A que tipo de paradigma pertenece.</li>
+                                <li>Un ejemplo de un programa escrito en ese lenguaje <br> (NO EL PROGRAMA "HOLA MUNDO").</li>
+                            </ul>
+                    </div> <br><br>
+
+                    <h3>Lenguaje Php</h3> <br>
+
+                    <img src="img/Tarea No.13/php.png" style="float: right; width: 260px; height: 130px; margin-left: 20px" >
+
+                    <p> El PHP es un lenguaje de scripting de código abierto, del lado del servidor, con programación HTML integrada que se utiliza para crear páginas web dinámicas. 
+                        Las ventajas de PHP son su flexibilidad y su alta compatibilidad con otras bases de datos. Además, PHP es considerado como un lenguaje fácil de aprender.<br><br>
+
+                        PHP se relacionan con los scripts del lado del servidor. PHP puede realizar cualquier tarea que cualquier programa CGI o Common Gateway Interface puede hacer y 
+                        maneja el intercambio de datos entre el servidor y el software. Por lo tanto, PHP puede recopilar datos o crear webs de contenido dinámico.
+
+                    </p><br><br>
+
+                    <h3>Sintaxis y Simbolos</h3><br><br><br>
+
+                    <h4>Sintaxis General con simbolos y operadores</h4><br>
+                    <div class="simbolos" style="padding-top: 10px; margin-left: 220px; border: black solid 2px; width: 450px; height: 720px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Start = <?php // PHP code goes here ?></li><br>
+                                <li>Default extension = .php</li><br>
+                                <li>output = echo</li><br>
+                                <li>Palabras clave o Keywords = if, else, while, echo</li><br>
+                                <li>color = $color</li><br>
+                                <li>Comentarios = //, #</li><br>
+                                <li>Variables = $, $txt, $x, $y</li><br>
+                                <li>Output Variables = echo</li><br>
+                                <li>Scopes = local, global, static</li><br>
+                                <li>Global scope = outside</li><br>
+                                <li>Local scope = within </li><br>
+                                <li>Static scope = static</li><br>
+                                <li>Imprimir = print, echo</li><br>
+                                <li>Tipos de datos = String, Integer, Float, Boolean, Array, Object, NULL, Resource,</li><br>
+                                <li>Integers = 2, 256, -256, 10358, -179567</li><br>
+                                <li>Floats = 2.0, 256.4, 10.358, 7.64E+5, 5.56E-5</li><br>
+                                <li>Infinity = PHP_FLOAT_MAX</li><br>
+                                <li>NaN = Not a Number</li><br>
+                            </ul>
+                        </div><br><br>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 10px; border: black solid 2px; width: 450px; height: 660px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Math = <br><br>
+                                    pi()<br>
+                                    min()<br>
+                                    max()<br>
+                                    abs()<br>
+                                    sqrt()<br>
+                                    round()<br>
+                                    rand()<br>
+                                </li><br>
+                                <li>Constantes o Constant = <br> define(name, value, case-insensitive)</li><br>
+                                <li>Constant Arrays = define()</li><br>
+                                <li>Operadores = +, -, *, /, %, **</li><br>
+                                <li>Assignment = x = y, x += y, x -= y, x *= y, x /= y, x %= y</li><br>
+                                <li>Comparison  = ==, ===, !=, >, <, >=, <=, <=></li><br>
+                                <li>Increment / Decrement = ++$x, $x++, --$x, $x--</li><br>
+                                <li>Logical = and, or, xor, &&, ||, !</li><br>
+                                <li>String = ., .=</li><br>
+                                <li>Array = +, ==, ===, !=, <>, !== </li><br>
+                                <li>Conditional = ?:, ??</li>
+
+                            </ul>
+                        </div>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 452px; height: 660px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Condicionales = if, if else, if elseif else, switch</li><br>
+                                <li>Loops = while, do while, for, foreach</li><br>
+                                <li>Funnctions = function</li><br>
+                                <li>Arrays = array()<br><br>
+                                    $cars1 = "Volvo";<br>
+                                    $cars2 = "BMW";<br>
+                                    $cars3 = "Toyota";
+                                </li><br>
+                                <li>Superglobals = <br><br>
+                                    $GLOBALS<br>
+                                    $_SERVER<br>
+                                    $_REQUEST<br>
+                                    $_POST<br>
+                                    $_GET<br>
+                                    $_FILES<br>
+                                    $_ENV<br>
+                                    $_COOKIE<br>
+                                    $_SESSION</li><br>
+                                <li>Regular Expressions = $exp = "/w3schools/i"; <br><br>
+                                    preg_match()<br>
+                                    preg_match_all()<br>
+                                    preg_replace()<br>
+                                </li><br>
+                                
+                            </ul>
+                        </div>
+                        <h6>.</h6><br><br>
+                    <h3>Esqueleto de los programas</h3><br>
+                    <p></p><br><br>
+
+                        <img src="img/Tarea No.13/estr.png" style="margin-left: 100px; height: 400px; width: 700px;"><br><br><br><br>
+
+                    <h3>Aplicacion a descargar para editar y ejecutar</h3><br>
+                    <p>
+
+                    </p><br><br>
+
+                    <img src="img/Tarea No.13/netbeans.png" style="margin-left: 60px; margin-right: 30px; height: 150px; width: 150px;">  <img src="img/Tarea No.13/visual.png" style="margin-right: 30px; height: 150px; width: 150px;">  <img src="img/Tarea No.13/eclipse.png" style="margin-right: 30px; height: 150px; width: 200px;"> <img src="img/Tarea No.13/sublime.png" style="margin-left: 30px; height: 150px; width: 150px;"><br><br><br><br>
+
+
+                    <h3>¿A que tipo de paradigma pertenece? <br><br>- imperativo, funcional, orientado a objetos, procedural, reflexivo</h3><br>
+
+                    <p>Con el lenguaje PHP es posible emplear el paradigma orientado a objetos para programar, como así también el estructurado e incluso combinarlos.
+                        Ademas que también sigue los paradigmas de programación imperativa y la programación reflexiva, esto porque php es un lenguaje tan variado y extenso 
+                        que su metodologia multiparadigma abarca distintos paradigmas. <br><br>
+
+                    </p><br><br>
+
+
+
+                    <h3>Ejemplo de un programa escrito en este lenguaje</h3><br><br><br>
+                    <img src="img/Tarea No.13/ejemplo.png" style="margin-left: 50px; margin-bottom: 200px; width: 800px; height: 500px;">
+
+
+                </div>
+            </article>
+            <div class="botones">
+
+                    <button class="button_anterior"><a href="tarea12.html">Anterior</a></button>
+
+                    <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                    <button class="button_siguiente"><a href="tarea14.html">Siguiente</a></button>
+            </div>
+
+            
+    </main>
+</body>
+</html>

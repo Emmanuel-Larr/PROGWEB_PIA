@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea No.11</title>
+    <link rel="stylesheet" href="Css/tarea11_css.css">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>1945008</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="personales.html">Personales (Inicio)</a></li>
+                    <li><a href="tareas.html">Tareas (Inicio)</a></li>
+                </ul>
+            </nav>
+            <div class="botones">
+
+                <button class="button_anterior"><a href="tarea10.html">Anterior</a></button>
+
+                <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                <button class="button_siguiente"><a href="tarea12.html">Siguiente</a></button>
+            </div>
+            <article>
+
+                <div class="Conceptos">
+
+                    <h1>Tarea No.11</h1><br>
+                    <div class="descripcion">
+                        <h4>Descripcion:</h4><br>
+                        <li><strong>Del lenguaje Cobol</strong></li>
+                        <li>Investigar:</li>
+                            <ul>
+                                <li>Simbolos, sintaxis, esqueleto de los programas.</li>
+                                <li>Aplicacion a descargar para editar y ejecutar.</li>
+                                <li>A que tipo de paradigma pertenece.</li>
+                                <li>Un ejemplo de un programa escrito en ese lenguaje <br> (NO EL PROGRAMA "HOLA MUNDO").</li>
+                            </ul>
+                    </div> <br><br>
+
+                    <h3>Lenguaje Cobol</h3> <br>
+
+                    <img src="img/Tarea No.11/cobol.png" style="float: right; width: 300px; height: 170px; margin-left: 20px" >
+
+                    <p>COBOL es un acrónimo que significa COmmon Business Oriented Language o Lenguaje orientado a los negocios comunes. Está diseñado para el desarrollo de negocios, 
+                        por lo general orientada a archivos y aplicaciones. No está diseñado para escribir programas de sistemas, como por ejemplo un sistema operativo o un compilador.<br><br>
+
+                        Pero en si, el lenguaje COBOL fue diseñado para escribir programas autodocumentados, mediante separación en divisiones para la declaración de variables 
+                        de los procedimientos y una división para llevar un registro de quién solicitó el programa y quiénes lo escribieron.
+                    </p><br><br>
+
+                    <h3>Sintaxis y Simbolos</h3><br><br><br>
+
+                    <h4>Sintaxis General con simbolos y operadores</h4><br>
+                    <div class="simbolos" style="padding-top: 10px; margin-left: 220px; border: black solid 2px; width: 450px; height: 720px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Alfabeticos y Alfabetos = Letras de la A a la Z.</li><br>
+                                <li>Los valores numericos = 0-9</li><br>
+                                <li>+ =	Signo más</li><br>
+                                <li>- = Signo menos o guión</li><br>
+                                <li>* =	Asterisco</li><br>
+                                <li>/ = Barra inclinada</li><br>
+                                <li>$ =	Símbolo de moneda</li><br>
+                                <li>, =	Coma</li><br>
+                                <li>; = Punto y coma</li><br>
+                                <li>. = Punto decimal o Período</li><br>
+                                <li>" = Comillas</li><br>
+                                <li>( = Paréntesis izquierdo</li><br>
+                                <li>) = Paréntesis derecho</li><br>
+                                <li>> = Mayor que</li><br>
+                                <li>< = Menos de</li><br>
+                                <li>: = Colon</li><br>
+                                <li>' = Apóstrofe</li><br>
+                                <li> = =Signo Igual</li><br>
+                                <li>& = Ampersand</li><br>
+                                
+                            </ul>
+                        </div><br><br>
+                    <div class="simbolos" style="float: left; padding-top: 10px; margin-left: 0px; border: black solid 2px; width: 450px; height: 650px; padding: 5px;">
+                        <p>
+                            <ul>
+                                
+                                <li>Simbolos = Ortograficos, aritmeticos y relacionales.</li><br>
+                                <li>Ortograficos = ( ., ;)</li><br>
+                                <li>Aritmeticos = (+, -, *, /, **)</li><br>
+                                <li>Relacionales = (<, >, =)</li><br>
+                                <li>Constantes = Cualquier numero hasta de 18 digitos.</li><br>
+                                <li>Constantes no numericos = ""</li><br>
+                                <li>Figurativas = Palabras reservadas como ejemplos, ZERO = 0, SPACE = “ “, HIGH-VALUE = El valor más alto, LOWVALUE = El valor más bajo.</li><br>
+                                <li>Números de la columna =	Reservado para los números de línea.</li><br>
+                                <li>Indicador =	Puede tener asterisco ( * ) indicando las observaciones, un guión ( -) en la que se indica continuación y barra diagonal ( / ) en la que se indica de forma.</li><br>
+                                <li>UNA Zona = COBOL todos las divisiones, secciones, párrafos y algunas entradas especiales debe comenzar en la zona A.</li><br>
+                                <li>Zona B = Las instrucciones COBOL debe comenzar en la zona B.</li><br>
+                                <li>Área de identificación = Se puede utilizar como necesaria por el programador.</li><br>
+
+                            </ul>
+                        </div>
+                        <div class="simbolos" style="display: inline-block; padding-top: 10px; margin-left: 20px; border: black solid 2px; width: 430px; height: 650px; padding: 5px;">
+                            <p>
+                                <ul>
+                                    
+                                    <li>Simbolos = Ortograficos, aritmeticos y relacionales.</li><br>
+                                    <li>Separadores = Espacio, coma, Punto, apóstrofe, paréntesis izquierdo y derecho, y comillas.</li><br>
+                                    <li>Comentario = Línea de comentario y entrada de comentario.</li><br>
+                                    <li>COBOL = Palabra es una cadena de caracteres que puede ser una palabra reservada o definido por el usuario. Puede tener una longitud de hasta 30 caracteres.</li><br>
+                                    <li>Palabras clave = ACEPTAR, mover, etc.</li><br>
+                                    <li>Caracteres Especiales = +, -, * , <, <=, etc.</li><br>
+                                    <li>Las constantes = valores constantes como CERO, espacios, etc.</li><br>
+                                    <li>ALTA DE VALORES	= Uno o más caracteres que va a ser la posición más alta en orden descendente.</li><br>
+                                    <li>BAJA DE VALORES	= Uno o más caracteres con ceros en representación binaria.</li><br>
+                                    <li>CERO/CERO = Uno o más un cero, dependiendo de el tamaño de la variable.</li><br>
+                                    <li>ESPACIOS = Uno o más espacios en blanco.</li><br>
+                                    <li>LAS COMILLAS = Comillas simples o dobles.</li><br>
+                                    <li>TODO literal = Rellena los datos con Literal.</li><br>
+                                </ul>
+                            </div><br><br><br>
+                        
+                    <h3>Esqueleto de los programas</h3><br>
+
+                        <img src="img/Tarea No.11/est.png" style="margin-left: 50px; height: 300px; width: 800px;"> <br><br>
+
+                    <h3>Aplicacion a descargar para editar y ejecutar</h3><br>
+                    <p>Visual COBOL permite a los desarrolladores crear, probar e implantar fácilmente programas COBOL en cualquier plataforma, como . Net, máquina virtual Java (JVM), Linux,
+                       contenedores Docker y la nube. Aproveche las nuevas capacidades y escale instantáneamente el desarrollo y las pruebas de COBOL con contenedores Docker.
+
+                    </p><br><br>
+
+                    <img src="img/Tarea No.11/programa.png" style="margin-left: 90px; height: 250px; width: 400px;"> <img src="img/Tarea No.11/programa2.png" style="height: 200px; width: 300px;"><br><br><br><br>
+
+                    <h3>¿A que tipo de paradigma pertenece? - Paradigma imperativo</h3><br>
+
+                    <p>Los lenguajes como FORTRAN, COBOL o ALGOL-60 son miembros del denominado paradigma imperativo.<br><br> La programación imperativa se caracteriza por el uso de variables, 
+                        comandos y procedimientos, la programación funcional se caracteriza por el uso de expresiones y funciones. Un programa dentro del paradigma funcional, 
+                        es una función o un grupo de funciones compuestas por 
+                        funciones más simples estableciéndose que una función puede llamar a otra, o el resultado de una función puede ser usado como argumento de otra función.
+                        
+                    </p><br><br>
+
+
+                    <h3>Ejemplo de un programa escrito en este lenguaje</h3><br><br><br>
+                    <img src="img/Tarea No.11/ejemplo.png" style="width: 850px; height: 400px;">
+                    <img src="img/Tarea No.11/ejemplo2.png" style="width: 850px; height: 100px;">
+
+
+                </div>
+            </article>
+            <div class="botones">
+
+                    <button class="button_anterior"><a href="tarea10.html">Anterior</a></button>
+
+                    <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                    <button class="button_siguiente"><a href="tarea12.html">Siguiente</a></button>
+            </div>
+
+            
+    </main>
+</body>
+</html>

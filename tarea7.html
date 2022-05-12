@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea No.7</title>
+    <link rel="stylesheet" href="Css/tarea7_css.css">
+</head>
+<body>
+    <main>
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>1945008</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="personales.html">Personales (Inicio)</a></li>
+                    <li><a href="tareas.html">Tareas (Inicio)</a></li>
+                </ul>
+            </nav>
+            <div class="botones">
+
+                <button class="button_anterior"><a href="tarea6.html">Anterior</a></button>
+
+                <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                <button class="button_siguiente"><a href="tarea8.html">Siguiente</a></button>
+            </div>
+            <article>
+
+                <div class="Conceptos">
+
+                    <h1>Tarea No.7</h1><br>
+                    <div class="descripcion">
+                        <h4>Descripcion:</h4><br>
+                        <li><strong>Del lenguaje Scheme</strong></li>
+                        <li>Investigar:</li>
+                            <ul>
+                                <li>Simbolos, sintaxis, esqueleto de los programas.</li>
+                                <li>Aplicacion a descargar para editar y ejecutar.</li>
+                                <li>A que tipo de paradigma pertenece.</li>
+                                <li>Un ejemplo de un programa escrito en ese lenguaje <br> (NO EL PROGRAMA "HOLA MUNDO").</li>
+                            </ul>
+                    </div> <br><br>
+
+                    <h3>Lenguaje Scheme</h3> <br>
+
+                    <img src="img/Tarea No.7/scheme.png" style="float: right; width: 200px; height: 170px; margin-left: 20px;" >
+
+                    <p>Scheme es un lenguaje de programación que surgió en los laboratorios del MIT en 1975, cuando Guy L. Steele y Gerarld J. Sussman buscaban un lenguaje con una semántica muy clara y sencilla.
+                        <br><br>
+
+                        Scheme principalmente es un dialecto de Lisp, es un lenguaje interpretado, muy expresivo y soporta varios paradigmas. Estuvo influenciado por el cálculo lambda. El desarrollo de Scheme ha sido lento, ya que la gente que estandarizó 
+                        Scheme es muy conservadora en cuanto a añadirle nuevas características,porque la calidad ha sido siempre más importante que la utilidad empresarial. Por eso Scheme es considerado como uno de los lenguajes mejor diseñados de propósito general. 
+
+                        
+
+                    </p><br><br>
+
+                    <h3>Sintaxis y Simbolos</h3><br><br><br>
+
+                    <h4>Sintaxis General con simbolos y operadores</h4><br>
+                    <div class="simbolos" style="padding-top: 10px; margin-left: 220px; border: black solid 2px; width: 450px; height: 520px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>Expresión = atomo |  lista</li><br>
+                                <li>Átomo = numero | string | identificador | </li><br>
+                                <li>Carácter | Boolean </li><br>
+                                <li>Lista = ‘(’secuencia-expresión’)’</li><br>
+                                <li>Secuencia-expresión = expresión secuencia-expresión | expresión </li><br>
+                                <li>Función = (nombre_función argumentó1 , argumento2 , argumento3)</li><br>
+                                <li>atomo = elemento básico, identificador, letras y dígitos </li><br>
+                                <li>boleamos = #t (verdadero), #f (falso)</li><br>
+                                <li>números = 42,2+3i,3,16,4/6</li><br>
+                                <li>listas = (Conjunto de elementos entre paréntesis ()) formato por átomo o listas</li><br>
+                                <li>carácter = #\la , etc.</li><br>
+                                <li>string = “hola”</li><br>  
+                            </ul>
+                        </div><br><br>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 290px; height: 460px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>+ = suma </li><br>
+                                <li>- = resta</li><br>
+                                <li>* = multiplicación </li><br>
+                                <li>/ = división </li><br>
+                                <li>abs = valor absoluto del argumento </li><br>
+                                <li>exp = Exponencial</li><br>
+                                <li>expt = Dados dos argumentos: x, e, y, calcula x^y.</li><br>
+                                <li>max = maximo de sus argumentos.</li><br>
+                                <li>min = mínimo de sus argumentos.</li><br>
+                                <li>sqrt = raíz cuadrada del argumento no negativo.</li><br>
+                            </ul>
+                        </div>
+                    <div class="simbolos" style="padding-top: 10px; float: left; margin-left: 0px; border: black solid 2px; width: 260px; height: 460px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>= = igual</li><br>
+                                <li>> = mayor que</li><br>
+                                <li>< = menor que </li><br>
+                                <li>>= = mayor o igual</li><br>
+                                <li><= = menor o igual</li><br>
+                                <li>even? = ¿Es número Pat?</li><br>   
+                                <li>odd? = ¿Es número impar?</li><br>       
+                                <li>zero? = ¿Número cero?</li><br>
+                                <li>car = Lista</li><br>
+                                <li>cdr = Lista</li><br>
+                                <li>const = Átomo | List, Lista</li><br>
+                                <li>list = Aromo | Lista</li><br>
+                            </ul>
+                        </div>
+                    <div class="simbolos" style="padding-top: 10px; display: inline-block; margin-left: 0px; border: black solid 2px; width: 360px; height: 460px; padding: 5px;">
+                        <p>
+                            <ul>
+                                <li>eq? = Átomo | Lista, Átomo | Lista</li><br>
+                                <li>null? = Átomo | Lista</li><br>
+                                <li>list? = Átomo | Lista </li><br>
+                                <li>equal? = eq? = Átomo | Lista, Átomo | Lista</li><br>
+                                <li>and = (and arg1 arg2 … argN)</li><br>
+                                <li>or = (or arg1 arg2 … argN)</li><br>
+                                <li>not = (not arg1)</li><br>
+                                <li>eval = Evalúa la expresión que recibe como argumento </li><br>
+                                <li>quote o (‘) = No evalúa el parámetro pasado</li><br>
+                            </ul>
+                        </div><br><br>
+                    
+                    <h3>Esqueleto de los programas</h3><br>
+                    <p></p><br><br>
+
+                        <img src="img/Tarea No.7/est.png" style="margin-left: 50px; height: 300px; width: 400px;"> <img src="img/Tarea No.7/est2.png" style="height: 300px; width: 400px;"><br><br><br><br>
+
+                    <h3>Aplicacion a descargar para editar y ejecutar</h3><br>
+                    <p>Racket es un lenguaje de programación de amplio espectro de la familia de Lisp y Scheme. Es multiparadigma así como de propósito general. Uno de sus principales objetivos tras su diseño es posibilitar la creación de nuevos lenguajes o dialectos.</p><br><br>
+
+                    <pre style="font-size: 20px;"><strong>                                       Racket</strong></pre><br>
+
+                    <img src="img/Tarea No.7/racket.png" style="margin-left: 360px; height: 170px; width: 200px;"><br><br><br><br><br>
+
+                    <h3>¿A que tipo de paradigma pertenece? - Paradigma funcional</h3><br>
+
+                    <p>Scheme es un lenguaje que hereda la mayor parte de características funcionales del Lisp, el lenguaje más importante del paradigma funcional. Ademas que
+                        este paradigma en un sentido estricto, se define como un programa como una función matemática que convierte unas entradas en unas salidas,
+                        sin ningún estado interno y ningún efecto lateral. <br><br>
+                        
+                        Cabe resaltar que este paradigma funcional nos presenta una nueva forma de programar de manera declarativa, por la cual esto se parecerá más a escribir donde su premisa principal es que el código sea más intuitivo que nunca.
+
+                    </p><br><br>
+
+                    <h3>Ejemplo de un programa escrito en este lenguaje</h3><br><br><br>
+
+                    <h5 style="font-size: 18px;">Como ejemplo podriamos poner este programa que sirve principalmente imprime un triángulo.</h5><br>
+
+                    <img src="img/Tarea No.7/ejem.png" style="margin-left: 0px; height: 300px; width: 900px;"><br><br><br><br><br>
+
+                </div>
+            </article>
+            <div class="botones">
+
+                    <button class="button_anterior"><a href="tarea6.html">Anterior</a></button>
+
+                    <button class="button_inicio"><a href="index.html">Superior</a></button>
+
+                    <button class="button_siguiente"><a href="tarea8.html">Siguiente</a></button>
+            </div>
+    </main>
+</body>
+</html>
